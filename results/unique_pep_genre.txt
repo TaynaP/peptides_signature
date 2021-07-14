@@ -1,0 +1,37 @@
+Alces :
+ Alces alces COL1A1 predicted protein : 70|71
+Bos :
+ Bos taurus COL1A1 prot : 28
+Capra :
+ Capra ibex COL1A1 predicted protein : 7|78|104|121
+Crocuta :
+ Crocuta crocuta COL1A1 predicted protein : 7|69|74|84|110|120
+Dicerorhinus :
+ Dicerorhinus sumatrensis COL1A1 predicted protein : 2|3|107
+Equus :
+ Equus asinus COL1A1 prot X1 : 2|4|6|7|8|65|83|94
+ Equus caballus COL1A1 prot : 2|4|6|7|8|65|83|94
+Homo :
+ Homo sapiens COL1A1 prot X1 : 2|6|7|8|24|26|29|61|108|114
+Loxondonta :
+ Loxodonta africana COL1A1 prot : 1|2|6|7|8|30|33|43|47|59|65|72|77|83|87|93|118|122
+Lutra :
+ Lutra lutra COL1A1 predicted protein : 7
+Marmota :
+ Marmota marmota marmota COL1A1 prot X1 : 2|4|5|6|10|91|92|105|106|109|115|119
+Mustela :
+ Mustela putorius furo COL1A1 prot X1 : 7
+Odobenus :
+ Odobenus rosmarus divergens COL1A1 prot : 2|3|26|31|65
+Oryctolagus :
+ Oryctolagus cuniculus COL1A1 prot : 2|3|4|5|7|8|9|15|16|66|68|94|95|100|108|113|119|120|121|124|125|127|128|129|130
+Rangifer :
+ Rangifer tarandus COL1A1 predicted protein : 92
+Sus :
+ Sus scrofa COL1A1 prot X1 : 2|5|6|7|10|23|80|106|117|121
+Ursus :
+ Ursus arctos horribilis COL1A1 prot X1 : 2|121
+ Ursus thibetanus thibetanus COL1A1 predicted protein : 2
+Vulpes :
+ Vulpes lagopus COL1A1 predicted protein : 83
+ Vulpes vulpes COL1A1 prot : 7
