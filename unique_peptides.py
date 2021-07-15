@@ -145,8 +145,8 @@ def pretty_print_unique_peptide(liste, output_dir):
     """
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
-    with open(output_dir + 'uniquePeptides.txt', 'w', newline='') as results:
-        with open(output_dir + 'allResults.txt', 'w', newline='') as allRes:
+    with open(output_dir + 'uniquePeptides.csv', 'w', newline='') as results:
+        with open(output_dir + 'allResults.csv', 'w', newline='') as allRes:
             writer_all = csv.writer(allRes, delimiter='|')
             writer_unique = csv.writer(results, delimiter='|')
             writer_all.writerow(["Unique peptides for each sequence :"])

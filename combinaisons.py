@@ -240,8 +240,8 @@ def createFile(output_dir, combinations, combsGenus, combsFamily, dicoNameSeq, p
     """
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
-    with open(output_dir + 'combinations.txt', 'w', newline='') as results:
-        with open(output_dir + 'allResults.txt', 'a', newline='') as allRes:
+    with open(output_dir + 'combinations.csv', 'w', newline='') as results:
+        with open(output_dir + 'allResults.csv', 'a', newline='') as allRes:
             writer_all = csv.writer(allRes, delimiter='|')
             writer_combi = csv.writer(results, delimiter='|')
             writer_combi.writerow(["List of unique combinations (for sequences that don't have unique peptides) :"])
@@ -318,7 +318,7 @@ def prettyPrint_liste_peptides(output_dir, peptideToProtein, dicoNameSeq):
         """
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
-    with open(output_dir + 'allResults.txt', 'a') as results:
+    with open(output_dir + 'allResults.csv', 'a') as results:
         results.write("*********************************************\n")
         results.write("\nLISTE DES PEPTIDES POUR CHAQUE SÉQUENCE :")
         for prot, peps in peptideToProtein.items():

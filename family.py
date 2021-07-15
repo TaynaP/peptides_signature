@@ -174,8 +174,8 @@ def pretty_print_unique_peptide_family(liste, output_dir):
     """
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
-    with open(output_dir + 'unique_pep_family.txt', 'w', newline='') as results:
-        with open(output_dir + 'allResults.txt', 'a', newline='') as allRes:
+    with open(output_dir + 'unique_pep_family.csv', 'w', newline='') as results:
+        with open(output_dir + 'allResults.csv', 'a', newline='') as allRes:
             writer_all = csv.writer(allRes, delimiter='|')
             writer_family = csv.writer(results, delimiter='|')
             writer_all.writerow("")

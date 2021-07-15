@@ -406,9 +406,9 @@ Cervidae|Capreolus|Capreolus Capreolus capreolus COL1A1 predicted protein|25,121
 Cervidae|Cervus|Cervus Cervus elaphus COL1A1 predicted protein|25,121
 *********************************************
 
-LIST OF PEPTIDES FOR EACH SEQUENCE :
+LISTE DES PEPTIDES POUR CHAQUE SÉQUENCE :
 
-Protein : Alces Alces alces COL1A1 predicted protein
+Protéine : Alces Alces alces COL1A1 predicted protein
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 46 ; LLLLLAATALLTHGQEEGQEEGQEEDIPPVTCVQNGLR
 	Peptide 3 : position 50 ; YHDR
@@ -532,7 +532,7 @@ Protein : Alces Alces alces COL1A1 predicted protein
 	Peptide 121 : position 1435 ; TSR
 	Peptide 122 : position 1463 ; LPIIDVAPLDVGAPDQEFGFDVGPVCFL
 
-Protein : Bison Bison bison bison COL1A1 prot
+Protéine : Bison Bison bison bison COL1A1 prot
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 46 ; LLLLLAATALLTHGQEEGQEEGQEEDIPPVTCVQNGLR
 	Peptide 3 : position 50 ; YHDR
@@ -655,7 +655,7 @@ Protein : Bison Bison bison bison COL1A1 prot
 	Peptide 120 : position 1435 ; TSR
 	Peptide 121 : position 1463 ; LPIIDVAPLDVGAPDQEFGFDVGPACFL
 
-Protein : Bos Bos taurus COL1A1 prot
+Protéine : Bos Bos taurus COL1A1 prot
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 46 ; LLLLLAATALLTHGQEEGQEEGQEEDIPPVTCVQNGLR
 	Peptide 3 : position 50 ; YHDR
@@ -778,7 +778,7 @@ Protein : Bos Bos taurus COL1A1 prot
 	Peptide 120 : position 1467 ; TSR
 	Peptide 121 : position 1495 ; LPIIDVAPLDVGAPDQEFGFDVGPACFL
 
-Protein : Canis Canis lupus dingo COL1A1 prot
+Protéine : Canis Canis lupus dingo COL1A1 prot
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 42 ; LLLLLAATALLTHGQEEGQEEDIPPVTCVQNGLR
 	Peptide 3 : position 46 ; YYDR
@@ -901,7 +901,7 @@ Protein : Canis Canis lupus dingo COL1A1 prot
 	Peptide 120 : position 1432 ; TSR
 	Peptide 121 : position 1460 ; LPIIDVAPLDVGAPDQEFGMDIGPVCFL
 
-Protein : Capra Capra ibex COL1A1 predicted protein
+Protéine : Capra Capra ibex COL1A1 predicted protein
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 46 ; LLLLLAATALLTHGQEEGQEEGQEEDIPPVTCVQNGLR
 	Peptide 3 : position 50 ; YHDR
@@ -1024,7 +1024,7 @@ Protein : Capra Capra ibex COL1A1 predicted protein
 	Peptide 120 : position 1435 ; TSR
 	Peptide 121 : position 1463 ; LPIIDVAPLDVGAPDQEFGFDIGSVCFL
 
-Protein : Capreolus Capreolus capreolus COL1A1 predicted protein
+Protéine : Capreolus Capreolus capreolus COL1A1 predicted protein
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 46 ; LLLLLAATALLTHGQEEGQEEGQEEDIPPVTCVQNGLR
 	Peptide 3 : position 50 ; YHDR
@@ -1147,7 +1147,7 @@ Protein : Capreolus Capreolus capreolus COL1A1 predicted protein
 	Peptide 120 : position 1435 ; TSR
 	Peptide 121 : position 1463 ; LPIIDVAPLDVGAPDQEFGFDVGPVCFL
 
-Protein : Ceratotherium Ceratotherium simum simum COL1A1 prot
+Protéine : Ceratotherium Ceratotherium simum simum COL1A1 prot
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 42 ; LLLLLAATALLTHGQEEGQEEDIPAVTCIQNGLR
 	Peptide 3 : position 50 ; YHDGAVWK
@@ -1269,7 +1269,7 @@ Protein : Ceratotherium Ceratotherium simum simum COL1A1 prot
 	Peptide 119 : position 1432 ; TSR
 	Peptide 120 : position 1460 ; LPIIDVAPLDIGAPDQEFGIDIGPVCFL
 
-Protein : Cervus Cervus elaphus COL1A1 predicted protein
+Protéine : Cervus Cervus elaphus COL1A1 predicted protein
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 46 ; LLLLLAATALLTHGQEEGQEEGQEEDIPPVTCVQNGLR
 	Peptide 3 : position 50 ; YHDR
@@ -1392,7 +1392,7 @@ Protein : Cervus Cervus elaphus COL1A1 predicted protein
 	Peptide 120 : position 1435 ; TSR
 	Peptide 121 : position 1463 ; LPIIDVAPLDVGAPDQEFGFDVGPVCFL
 
-Protein : Crocuta Crocuta crocuta COL1A1 predicted protein
+Protéine : Crocuta Crocuta crocuta COL1A1 predicted protein
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 42 ; LLLLLAATALLTHGQEEGQEEDIPPVTCVQNGLR
 	Peptide 3 : position 46 ; YYDR
@@ -1514,7 +1514,7 @@ Protein : Crocuta Crocuta crocuta COL1A1 predicted protein
 	Peptide 119 : position 1432 ; TSR
 	Peptide 120 : position 1460 ; LPIIDVAPLDIGAPDQEFGFDVGPACFL
 
-Protein : Dicerorhinus Dicerorhinus sumatrensis COL1A1 predicted protein
+Protéine : Dicerorhinus Dicerorhinus sumatrensis COL1A1 predicted protein
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 27 ; LLLLLAAAALLTHGQEEGR
 	Peptide 3 : position 42 ; EEDIPAVTCIQNGLR
@@ -1637,7 +1637,7 @@ Protein : Dicerorhinus Dicerorhinus sumatrensis COL1A1 predicted protein
 	Peptide 120 : position 1432 ; TSR
 	Peptide 121 : position 1460 ; LPIIDVAPLDIGAPDQEFGIDIGPVCFL
 
-Protein : Diceros Diceros bicornis COL1A1 predicted protein
+Protéine : Diceros Diceros bicornis COL1A1 predicted protein
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 42 ; LLLLLAATALLTHGQEEGQEEDIPAVTCIQNGLR
 	Peptide 3 : position 50 ; YHDGAVWK
@@ -1759,7 +1759,7 @@ Protein : Diceros Diceros bicornis COL1A1 predicted protein
 	Peptide 119 : position 1432 ; TSR
 	Peptide 120 : position 1460 ; LPIIDVAPLDIGAPDQEFGIDIGPVCFL
 
-Protein : Equus Equus asinus COL1A1 prot X1
+Protéine : Equus Equus asinus COL1A1 prot X1
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 46 ; LLLLLAATALLTHGQEEGQEEGQEEDIPAVTCIQDGLR
 	Peptide 3 : position 50 ; YHDR
@@ -1883,7 +1883,7 @@ Protein : Equus Equus asinus COL1A1 prot X1
 	Peptide 121 : position 1435 ; TSR
 	Peptide 122 : position 1463 ; LPIIDVAPLDIGAPDQEFGIDIGPVCFL
 
-Protein : Equus Equus caballus COL1A1 prot
+Protéine : Equus Equus caballus COL1A1 prot
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 46 ; LLLLLAATALLTHGQEEGQEEGQEEDIPAVTCIQDGLR
 	Peptide 3 : position 50 ; YHDR
@@ -2007,7 +2007,7 @@ Protein : Equus Equus caballus COL1A1 prot
 	Peptide 121 : position 1435 ; TSR
 	Peptide 122 : position 1463 ; LPIIDVAPLDIGAPDQEFGIDIGPVCFL
 
-Protein : Felis Felis catus COL1A1 prot X1
+Protéine : Felis Felis catus COL1A1 prot X1
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 43 ; LLLLLAATALLTHGQEEGQEEEDIPPVTCVQNGLR
 	Peptide 3 : position 47 ; YYDR
@@ -2130,7 +2130,7 @@ Protein : Felis Felis catus COL1A1 prot X1
 	Peptide 120 : position 1433 ; TSR
 	Peptide 121 : position 1461 ; LPIIDVAPLDVGAPDQEFGIDIGPACFL
 
-Protein : Homo Homo sapiens COL1A1 prot X1
+Protéine : Homo Homo sapiens COL1A1 prot X1
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 46 ; LLLLLAATALLTHGQEEGQVEGQDEDIPPITCVQNGLR
 	Peptide 3 : position 50 ; YHDR
@@ -2250,7 +2250,7 @@ Protein : Homo Homo sapiens COL1A1 prot X1
 	Peptide 117 : position 1370 ; TSR
 	Peptide 118 : position 1398 ; LPIIDVAPLDVGAPDQEFGFDVGPVCFL
 
-Protein : Loxondonta Loxodonta africana COL1A1 prot
+Protéine : Loxondonta Loxodonta africana COL1A1 prot
 	Peptide 1 : position 8 ; MFSFVDIR
 	Peptide 2 : position 42 ; LLLLLAATALLTHGQEEGQDEDIPSVTCVQNGLR
 	Peptide 3 : position 46 ; YYDR
@@ -2374,7 +2374,7 @@ Protein : Loxondonta Loxodonta africana COL1A1 prot
 	Peptide 121 : position 1427 ; TSR
 	Peptide 122 : position 1455 ; LPIIDVAPLDVGAPDQEFGFDIGPVCFL
 
-Protein : Lutra Lutra lutra COL1A1 predicted protein
+Protéine : Lutra Lutra lutra COL1A1 predicted protein
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 42 ; LLLLLAATALLTHGQEEGQEEDIPPVTCVQNGLR
 	Peptide 3 : position 46 ; YYDR
@@ -2497,7 +2497,7 @@ Protein : Lutra Lutra lutra COL1A1 predicted protein
 	Peptide 120 : position 1432 ; TSR
 	Peptide 121 : position 1460 ; LPIIDVAPLDVGAPDQEFGMDIGPVCFL
 
-Protein : Marmota Marmota marmota marmota COL1A1 prot X1
+Protéine : Marmota Marmota marmota marmota COL1A1 prot X1
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 46 ; LLLLLAATALLTHGQTEGEVNDQEGDIPGVDCIQNGLR
 	Peptide 3 : position 47 ; R
@@ -2618,7 +2618,7 @@ Protein : Marmota Marmota marmota marmota COL1A1 prot X1
 	Peptide 118 : position 1434 ; TSR
 	Peptide 119 : position 1462 ; LPIIDVAPLDIGAPDQEFGMDIGPACFV
 
-Protein : Mustela Mustela putorius furo COL1A1 prot X1
+Protéine : Mustela Mustela putorius furo COL1A1 prot X1
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 42 ; LLLLLAATALLTHGQEEGQEEDIPPVTCVQNGLR
 	Peptide 3 : position 46 ; YYDR
@@ -2741,7 +2741,7 @@ Protein : Mustela Mustela putorius furo COL1A1 prot X1
 	Peptide 120 : position 1432 ; TSR
 	Peptide 121 : position 1460 ; LPIIDVAPLDVGAPDQEFGMDIGPVCFL
 
-Protein : Odobenus Odobenus rosmarus divergens COL1A1 prot
+Protéine : Odobenus Odobenus rosmarus divergens COL1A1 prot
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 21 ; LLLFLAATALLTR
 	Peptide 3 : position 42 ; GQEEGQEEDIPPVTCVQNGLR
@@ -2865,7 +2865,7 @@ Protein : Odobenus Odobenus rosmarus divergens COL1A1 prot
 	Peptide 121 : position 1432 ; TSR
 	Peptide 122 : position 1460 ; LPIIDVAPLDVGAPDQEFGMDVGPVCFL
 
-Protein : Oryctolagus Oryctolagus cuniculus COL1A1 prot
+Protéine : Oryctolagus Oryctolagus cuniculus COL1A1 prot
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 46 ; LLLLLAATALLTHGQEEGQVEGQSEDIPPVTCVQNGVR
 	Peptide 3 : position 49 ; SVK
@@ -2997,7 +2997,7 @@ Protein : Oryctolagus Oryctolagus cuniculus COL1A1 prot
 	Peptide 129 : position 1493 ; QFHTDFGDLFLPLHSSLK
 	Peptide 130 : position 1498 ; LSFYL
 
-Protein : Panthera Panthera pardus COL1A1 prot X1
+Protéine : Panthera Panthera pardus COL1A1 prot X1
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 43 ; LLLLLAATALLTHGQEEGQEEEDIPPVTCVQNGLR
 	Peptide 3 : position 47 ; YYDR
@@ -3120,7 +3120,7 @@ Protein : Panthera Panthera pardus COL1A1 prot X1
 	Peptide 120 : position 1433 ; TSR
 	Peptide 121 : position 1461 ; LPIIDVAPLDVGAPDQEFGIDIGPACFL
 
-Protein : Rangifer Rangifer tarandus COL1A1 predicted protein
+Protéine : Rangifer Rangifer tarandus COL1A1 predicted protein
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 46 ; LLLLLAATALLTHGQEEGQEEGQEEDIPPVTCVQNGLR
 	Peptide 3 : position 50 ; YHDR
@@ -3243,7 +3243,7 @@ Protein : Rangifer Rangifer tarandus COL1A1 predicted protein
 	Peptide 120 : position 1435 ; TSR
 	Peptide 121 : position 1463 ; LPIIDVAPLDVGAPDQEFGFDVGPVCFL
 
-Protein : Sus Sus scrofa COL1A1 prot X1
+Protéine : Sus Sus scrofa COL1A1 prot X1
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 49 ; LLLLLAATALLTHGQEEGQEEGQQGQEEDIPPVTCVQNGLR
 	Peptide 3 : position 53 ; YHDR
@@ -3366,7 +3366,7 @@ Protein : Sus Sus scrofa COL1A1 prot X1
 	Peptide 120 : position 1438 ; TSR
 	Peptide 121 : position 1466 ; LPIIDVAPLDVGAPDQEFGIDLSPVCFL
 
-Protein : Ursus Ursus arctos horribilis COL1A1 prot X1
+Protéine : Ursus Ursus arctos horribilis COL1A1 prot X1
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 43 ; LLLLVAATALLTHGQEEGQEEEDIPPVTCVQNGLR
 	Peptide 3 : position 47 ; YYDR
@@ -3489,7 +3489,7 @@ Protein : Ursus Ursus arctos horribilis COL1A1 prot X1
 	Peptide 120 : position 1433 ; TSR
 	Peptide 121 : position 1461 ; LPIIDVAPLDIGAPDQEFGMDVGPVCFL
 
-Protein : Ursus Ursus thibetanus thibetanus COL1A1 predicted protein
+Protéine : Ursus Ursus thibetanus thibetanus COL1A1 predicted protein
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 43 ; LLLLVAATALLTHGQEEGQEEEDIPPVTCVQNGLR
 	Peptide 3 : position 47 ; YYDR
@@ -3612,7 +3612,7 @@ Protein : Ursus Ursus thibetanus thibetanus COL1A1 predicted protein
 	Peptide 120 : position 1433 ; TSR
 	Peptide 121 : position 1461 ; LPIIDVAPLDVGAPDQEFGMDVGPVCFL
 
-Protein : Vulpes Vulpes lagopus COL1A1 predicted protein
+Protéine : Vulpes Vulpes lagopus COL1A1 predicted protein
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 42 ; LLLLLAATALLTHGQEEGQEEDIPPVTCVQNGLR
 	Peptide 3 : position 46 ; YYDR
@@ -3735,7 +3735,7 @@ Protein : Vulpes Vulpes lagopus COL1A1 predicted protein
 	Peptide 120 : position 1432 ; TSR
 	Peptide 121 : position 1460 ; LPIIDVAPLDVGAPDQEFGMDIGPVCFL
 
-Protein : Vulpes Vulpes vulpes COL1A1 prot
+Protéine : Vulpes Vulpes vulpes COL1A1 prot
 	Peptide 1 : position 8 ; MFSFVDLR
 	Peptide 2 : position 42 ; LLLLLAATALLTHGQEEGQEEDIPPVTCVQNGLR
 	Peptide 3 : position 46 ; YYDR
