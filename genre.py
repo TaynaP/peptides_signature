@@ -1,6 +1,7 @@
 import itertools
 import combinaisons
 import os
+import csv
 
 def getAllGenus(peptideToProtein):
     """Crée la liste de toutes les genres
@@ -127,28 +128,7 @@ def where_pep_present_genre(dico):
     return dico_genre
 
 
-def unique_pep_genre(dico_pep_genre):
-    """Let the user find the peptides that are unique to only one genus (if the peptide appears only in one genus).
-
-    Args:
-        dico_pep_genre (dict): the dictonnary made in where_pep_present_genre()
-
-    Returns:
-        list: the list containing the peptides that are unique for one genus
-    """
-    unique_pep_genre_list = []
-    for pep, genre_list in dico_pep_genre.items():
-        unique = True
-        for i in range(len(genre_list)):
-            if i > 0:  # si la liste contient plus d'une sous liste, c'est que le peptide apparaît dans plus d'un genre donc il n'est pas unique à un genre
-                unique = False
-                break
-        if unique:
-            unique_pep_genre_list.append(pep)
-    return unique_pep_genre_list
-
-
-def pretty_print_unique_peptide_genus(liste, output_dir):
+def pretty_print_unique_peptide_genus(liste, output_file, allResultsFile):
     """Permet le formatage du fichier txt seulement pour les peptides uniques pour chaque genre
 
     Args:
@@ -159,44 +139,18 @@ def pretty_print_unique_peptide_genus(liste, output_dir):
     Raises:
         TypeError: if the parameters is not a list and a str
     """
-    currentGenus = ""
-    currentSequence = ""
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-    with open(output_dir + 'unique_pep_genre.txt', 'w') as results:
-        with open(output_dir + 'allResults.txt', 'a') as allRes:
-            allRes.write("\n\nListe des peptides uniques pour chaque genre :\n\n")
-            toInsert = []
+    with open(output_file, 'w', newline='') as results:
+        with open(allResultsFile, 'a', newline='') as allRes:
+            writer_all = csv.writer(allRes, delimiter='|')
+            writer_genus = csv.writer(results, delimiter='|')
+            writer_all.writerow("")
+            writer_all.writerow("")
+            writer_all.writerow(["Unique peptides for each genus :"])
+            writer_genus.writerow(["Family", "Genus", "Name", "Position", "Peptide seq"])
             for peptide in liste:
-                if peptide.get_genus() != currentGenus:
-                    if currentGenus != "":
-                        currentGenus = peptide.get_genus()
-                        lineToInsert = " {} : {}\n".format(currentSequence, '|'.join(map(lambda s: str(s).strip('()').replace(' ', ''), toInsert)))
-                        results.write(lineToInsert)
-                        allRes.write(lineToInsert)
-                        currentSequence = peptide.get_prot_name()
-                        toInsert = [peptide.get_nb_peptide()]
-                        results.write("{} :\n".format(currentGenus))
-                        allRes.write("{} :\n".format(currentGenus))
-                    else:
-                        currentGenus = peptide.get_genus()
-                        currentSequence = peptide.get_prot_name()
-                        toInsert = [peptide.get_nb_peptide()]
-                        results.write("{} :\n".format(currentGenus))
-                        allRes.write("{} :\n".format(currentGenus))
-                else:
-                    if peptide.get_prot_name() != currentSequence:
-                        lineToInsert = " {} : {}\n".format(currentSequence, '|'.join(map(lambda s: str(s).strip('()').replace(' ', ''), toInsert)))
-                        results.write(lineToInsert)
-                        allRes.write(lineToInsert)
-                        currentSequence = peptide.get_prot_name()
-                        toInsert = [peptide.get_nb_peptide()]
-                    else:
-                        toInsert.append(peptide.get_nb_peptide())
-            if toInsert:
-                lineToInsert = " {} : {}\n".format(currentSequence, '|'.join(map(lambda s: str(s).strip('()').replace(' ', ''), toInsert)))
-                results.write(lineToInsert)
-                allRes.write(lineToInsert)
+                rowToInsert = [peptide.get_family(), peptide.get_genus(), peptide.get_prot_name(), peptide.get_position(), peptide.get_seq()]
+                writer_all.writerow(rowToInsert)
+                writer_genus.writerow(rowToInsert)
 
 
 def mainGenre(dict_p, output_dir, peptidesToProtein):
