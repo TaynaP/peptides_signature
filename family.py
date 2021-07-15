@@ -1,6 +1,7 @@
 import itertools
 import combinaisons
 import os
+import csv
 
 def getAllFamilies(peptideToProtein):
     """Crée la liste de toutes les familles
@@ -160,7 +161,7 @@ def unique_pep_family(dico_pep_family):
     return sorted(unique_pep_family_list, key=lambda pep: pep.get_family())
 
 
-def pretty_print_unique_peptide_family(liste, output_dir):
+def pretty_print_unique_peptide_family(liste, output_file, allResultsFile):
     """Permet le formatage du fichier txt seulement pour les peptides uniques pour chaque famille
 
     Args:
@@ -171,44 +172,18 @@ def pretty_print_unique_peptide_family(liste, output_dir):
     Raises:
         TypeError: if the parameters is not a list and a str
     """
-    currentFamily = ""
-    currentSequence = ""
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-    with open(output_dir + 'unique_pep_family.txt', 'w') as results:
-        with open(output_dir + 'allResults.txt', 'a') as allRes:
-            allRes.write("\n\nListe des peptides uniques pour chaque famille :\n\n")
-            toInsert = []
+    with open(output_file, 'w', newline='') as results:
+        with open(allResultsFile, 'a', newline='') as allRes:
+            writer_all = csv.writer(allRes, delimiter='|')
+            writer_family = csv.writer(results, delimiter='|')
+            writer_all.writerow("")
+            writer_all.writerow("")
+            writer_all.writerow(["Unique peptides for each family :"])
+            writer_family.writerow(["Family", "Genus", "Name", "Position", "Peptide seq"])
             for peptide in liste:
-                if peptide.get_family() != currentFamily:
-                    if currentFamily != "":
-                        currentFamily = peptide.get_family()
-                        lineToInsert = " {} : {}\n".format(currentSequence, '|'.join(map(lambda s: str(s).strip('()').replace(' ', ''), toInsert)))
-                        results.write(lineToInsert)
-                        allRes.write(lineToInsert)
-                        currentSequence = peptide.get_prot_name()
-                        toInsert = [peptide.get_nb_peptide()]
-                        results.write("{} :\n".format(currentFamily))
-                        allRes.write("{} :\n".format(currentFamily))
-                    else:
-                        currentFamily = peptide.get_family()
-                        currentSequence = peptide.get_prot_name()
-                        toInsert = [peptide.get_nb_peptide()]
-                        results.write("{} :\n".format(currentFamily))
-                        allRes.write("{} :\n".format(currentFamily))
-                else:
-                    if peptide.get_prot_name() != currentSequence:
-                        lineToInsert = " {} : {}\n".format(currentSequence, '|'.join(map(lambda s: str(s).strip('()').replace(' ', ''), toInsert)))
-                        results.write(lineToInsert)
-                        allRes.write(lineToInsert)
-                        currentSequence = peptide.get_prot_name()
-                        toInsert = [peptide.get_nb_peptide()]
-                    else:
-                        toInsert.append(peptide.get_nb_peptide())
-            if toInsert:
-                lineToInsert = " {} : {}\n".format(currentSequence, '|'.join(map(lambda s: str(s).strip('()').replace(' ', ''), toInsert)))
-                results.write(lineToInsert)
-                allRes.write(lineToInsert)
+                rowToInsert = [peptide.get_family(), peptide.get_genus(), peptide.get_prot_name(), peptide.get_position(), peptide.get_seq()]
+                writer_all.writerow(rowToInsert)
+                writer_family.writerow(rowToInsert)
 
 
 def mainFamily(dict_p, output_dir, peptidesToProtein):
