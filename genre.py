@@ -1,6 +1,6 @@
 import itertools
 import combinaisons
-
+import os
 
 def getAllGenus(peptideToProtein):
     """Crée la liste de toutes les genres
@@ -148,7 +148,7 @@ def unique_pep_genre(dico_pep_genre):
     return unique_pep_genre_list
 
 
-def pretty_print_unique_peptide_genus(liste, output_file, allResultsFile):
+def pretty_print_unique_peptide_genus(liste, output_dir):
     """Permet le formatage du fichier txt seulement pour les peptides uniques pour chaque genre
 
     Args:
@@ -161,8 +161,10 @@ def pretty_print_unique_peptide_genus(liste, output_file, allResultsFile):
     """
     currentGenus = ""
     currentSequence = ""
-    with open(output_file, 'w') as results:
-        with open(allResultsFile, 'a') as allRes:
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    with open(output_dir + 'unique_pep_genre.txt', 'w') as results:
+        with open(output_dir + 'allResults.txt', 'a') as allRes:
             allRes.write("\n\nListe des peptides uniques pour chaque genre :\n\n")
             toInsert = []
             for peptide in liste:
@@ -197,12 +199,12 @@ def pretty_print_unique_peptide_genus(liste, output_file, allResultsFile):
                 allRes.write(lineToInsert)
 
 
-def mainGenre(dict_p, allResFile, peptidesToProtein):
+def mainGenre(dict_p, output_dir, peptidesToProtein):
     dict_g = where_pep_present_genre(dict_p)
     uniquePepGenre = unique_pep_genre(dict_g)
 
     # Création du fichier contenant les peptides uniques pour le genre
-    pretty_print_unique_peptide_genus(uniquePepGenre, "results/unique_pep_genre.txt", allResFile)
+    pretty_print_unique_peptide_genus(uniquePepGenre, output_dir)
 
     # Liste des séquences n'ayant pas de peptides uniques pour un genre
     seqWithoutUniqueGenre = combinaisons.getSequencesWithoutUnique(peptidesToProtein, uniquePepGenre)

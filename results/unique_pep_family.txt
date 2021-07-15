@@ -1,40 +1,39 @@
 Bovidae :
- Bison bison bison COL1A1 prot : 25|121
- Bos taurus COL1A1 prot : 25|28|121
- Capra ibex COL1A1 predicted protein : 7|78|104|121
+ Bison bison bison COL1A1 prot : 121
+ Bos taurus COL1A1 prot : 28|121
+ Capra ibex COL1A1 predicted protein : 7|121
 Canidae :
- Vulpes lagopus COL1A1 predicted protein : 83
  Vulpes vulpes COL1A1 prot : 7
 Cervidae :
- Alces alces COL1A1 predicted protein : 70|71
+ Alces alces COL1A1 predicted protein : 71
  Rangifer tarandus COL1A1 predicted protein : 92
 Elephantidae :
- Loxodonta africana COL1A1 prot : 1|2|6|7|8|30|33|43|47|59|65|72|77|83|87|93|118|122
+ Loxodonta africana COL1A1 prot : 2|6|8|30|33|43|47|65|72|77|83|93|118|122
 Equidae :
- Equus asinus COL1A1 prot X1 : 2|4|6|7|8|65|83|94
- Equus caballus COL1A1 prot : 2|4|6|7|8|65|83|94
+ Equus asinus COL1A1 prot X1 : 2|6|8|65|83
+ Equus caballus COL1A1 prot : 2|6|8|65|83
 Felidae :
  Felis catus COL1A1 prot X1 : 2|7|121
  Panthera pardus COL1A1 prot X1 : 2|7|121
 Hominidae :
- Homo sapiens COL1A1 prot X1 : 2|6|7|8|24|26|29|61|108|114
+ Homo sapiens COL1A1 prot X1 : 2|7|8|24|26|29|61|108|114
 Hyaenidae :
- Crocuta crocuta COL1A1 predicted protein : 7|69|74|84|110|120
+ Crocuta crocuta COL1A1 predicted protein : 7|74|110|120
 Leporidae :
- Oryctolagus cuniculus COL1A1 prot : 2|3|4|5|7|8|9|15|16|66|68|94|95|100|108|113|119|120|121|124|125|127|128|129|130
+ Oryctolagus cuniculus COL1A1 prot : 2|7|9|15|66|68|94|100|108|113|119|124|127|129
 Mustelidae :
  Lutra lutra COL1A1 predicted protein : 7
  Mustela putorius furo COL1A1 prot X1 : 7
 Odobenidae :
- Odobenus rosmarus divergens COL1A1 prot : 2|3|26|31|65
+ Odobenus rosmarus divergens COL1A1 prot : 2|3|31|65
 Rhinocerotidae :
- Ceratotherium simum simum COL1A1 prot : 2|3|5|6|69|91|106
- Dicerorhinus sumatrensis COL1A1 predicted protein : 2|3|4|6|7|70|107
- Diceros bicornis COL1A1 predicted protein : 2|3|5|6|69|91|106
+ Ceratotherium simum simum COL1A1 prot : 2|5|6|69|91
+ Dicerorhinus sumatrensis COL1A1 predicted protein : 2|3|6|7|70
+ Diceros bicornis COL1A1 predicted protein : 2|5|6|69|91
 Sciuridae :
- Marmota marmota marmota COL1A1 prot X1 : 2|4|5|6|10|91|92|105|106|109|115|119
+ Marmota marmota marmota COL1A1 prot X1 : 2|5|6|10|91|105|109|115|119
 Suidae :
- Sus scrofa COL1A1 prot X1 : 2|5|6|7|10|23|80|106|117|121
+ Sus scrofa COL1A1 prot X1 : 2|5|7|23|80|106|117|121
 Ursidae :
  Ursus arctos horribilis COL1A1 prot X1 : 2|121
  Ursus thibetanus thibetanus COL1A1 predicted protein : 2

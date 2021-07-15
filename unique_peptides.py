@@ -1,8 +1,9 @@
 from peptide_v2 import Peptides
 import itertools
 import csv
+import os
 
-def parse_csv(file, threshold):
+def parse_csv(file, threshold=1):
     """Lit le fichier multifasta de RPG et crée une liste d'objet Peptides avec tout les peptides issus de la digestion
 
     Args:
@@ -14,13 +15,13 @@ def parse_csv(file, threshold):
     Returns:
         list: list of all the peptides from RPG
     """
-    file_extension = file.split(".")
-    if file_extension[1] != "csv":
+    _, ext = os.path.splitext(file)
+    if ext != ".csv":
         raise NameError("the input file must be a csv file")
     list_pep = []
     nb_prot = 0
     current_prot_name = ""
-    f= open ("fichier/COL1A1_trypsin.csv")
+    f= open (file)
     myReader = csv.reader(f)
     next(myReader)
     for row in myReader:
@@ -75,7 +76,7 @@ def compare_peptide(liste):
         0].get_nb_peptide())))  # ici c'est pour avoir un dico dans l'ordre des protéines et par ordre de peptides
 
 
-def pretty_print_all(dico, output_file):
+def pretty_print_all(dico, output_dir):
     """Permet de formatage du fichier txt pour tous les peptides.
 
     Args:
@@ -86,7 +87,9 @@ def pretty_print_all(dico, output_file):
         TypeError: if the parameters is not a dict and a str
     """
     currentSequence = ""
-    with open(output_file, 'w') as results:
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    with open(output_dir + 'liste_peptides.txt', 'w') as results:
         peptides = list(dico.keys())
         for pep in peptides:
             if pep.get_prot_name() != currentSequence:
@@ -129,7 +132,7 @@ def unique_peptide(dico):
     return unique_peptide_list
 
 
-def pretty_print_unique_peptide(liste, output_file, allResultsFile):
+def pretty_print_unique_peptide(liste, output_dir):
     """Permet le formatage du fichier txt seulement pour les peptides uniques pour chaque protéine
 
     Args:
@@ -141,8 +144,10 @@ def pretty_print_unique_peptide(liste, output_file, allResultsFile):
         TypeError: if the parameters is not a list and a str
     """
     currentSequence = ""
-    with open(output_file, 'w') as results:
-        with open(allResultsFile, 'w') as allRes:
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    with open(output_dir + 'uniquePeptides.txt', 'w') as results:
+        with open(output_dir + 'allResults.txt', 'w') as allRes:
             allRes.write('Liste des peptides uniques pour chaque séquence : \n\n')
             toInsert = []
             for peptide in liste:

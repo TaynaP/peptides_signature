@@ -1,6 +1,6 @@
 import itertools
 import combinaisons
-
+import os
 
 def getAllFamilies(peptideToProtein):
     """Crée la liste de toutes les familles
@@ -160,7 +160,7 @@ def unique_pep_family(dico_pep_family):
     return sorted(unique_pep_family_list, key=lambda pep: pep.get_family())
 
 
-def pretty_print_unique_peptide_family(liste, output_file, allResultsFile):
+def pretty_print_unique_peptide_family(liste, output_dir):
     """Permet le formatage du fichier txt seulement pour les peptides uniques pour chaque famille
 
     Args:
@@ -173,8 +173,10 @@ def pretty_print_unique_peptide_family(liste, output_file, allResultsFile):
     """
     currentFamily = ""
     currentSequence = ""
-    with open(output_file, 'w') as results:
-        with open(allResultsFile, 'a') as allRes:
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    with open(output_dir + 'unique_pep_family.txt', 'w') as results:
+        with open(output_dir + 'allResults.txt', 'a') as allRes:
             allRes.write("\n\nListe des peptides uniques pour chaque famille :\n\n")
             toInsert = []
             for peptide in liste:
@@ -209,12 +211,12 @@ def pretty_print_unique_peptide_family(liste, output_file, allResultsFile):
                 allRes.write(lineToInsert)
 
 
-def mainFamily(dict_p, allResFile, peptidesToProtein):
+def mainFamily(dict_p, output_dir, peptidesToProtein):
     dict_f = where_pep_present_family(dict_p)
     uniquePepFamily = unique_pep_family(dict_f)
 
     # Création du fichier contenant les peptides uniques pour chaque famille
-    pretty_print_unique_peptide_family(uniquePepFamily, "results/unique_pep_family.txt", allResFile)
+    pretty_print_unique_peptide_family(uniquePepFamily, output_dir)
 
     # On cherche et renvoie les familles sans peptides uniques
     seqWithoutUniqueFamily = combinaisons.getSequencesWithoutUnique(peptidesToProtein, uniquePepFamily)

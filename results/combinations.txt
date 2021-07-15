@@ -1,7 +1,6 @@
 Liste des combinaisons uniques (pour les séquences n'ayant pas de peptide unique) : 
 
-Protéine 2 (Bison Bison bison bison COL1A1 prot) : 25|28
-Protéine 4 (Canis Canis lupus dingo COL1A1 prot) : 7|121|83
+Protéine 2 (Bison Bison bison bison COL1A1 prot) : 121|28
 Protéine 12 (Equus Equus asinus COL1A1 prot X1) : 2|93
 Protéine 13 (Equus Equus caballus COL1A1 prot) : 2|93
 Protéine 14 (Felis Felis catus COL1A1 prot X1) : 2|75
@@ -11,12 +10,7 @@ Protéine 26 (Ursus Ursus thibetanus thibetanus COL1A1 predicted protein) : 2|12
 
 Liste des combinaisons uniques pour chaque séquence, en ne prenant en compte que les séquences de genre différent : 
 
-Protéine 2 (Bison Bison bison bison COL1A1 prot) : 25|28
-Protéine 4 (Canis Canis lupus dingo COL1A1 prot) : 7|121|83
-Protéine 6 (Capreolus Capreolus capreolus COL1A1 predicted protein) : 
-Protéine 7 (Ceratotherium Ceratotherium simum simum COL1A1 prot) : 
-Protéine 8 (Cervus Cervus elaphus COL1A1 predicted protein) : 
-Protéine 11 (Diceros Diceros bicornis COL1A1 predicted protein) : 
+Protéine 2 (Bison Bison bison bison COL1A1 prot) : 121|28
 Protéine 14 (Felis Felis catus COL1A1 prot X1) : 2|75
 Protéine 22 (Panthera Panthera pardus COL1A1 prot X1) : 2|75
 
@@ -24,5 +18,6 @@ Protéine 22 (Panthera Panthera pardus COL1A1 prot X1) : 2|75
 Liste des combinaisons uniques pour chaque séquence, en ne prenant en compte que les séquences de famille différente : 
 
 Séquence 4 (Canis Canis lupus dingo COL1A1 prot) : 7|121
-Séquence 6 (Capreolus Capreolus capreolus COL1A1 predicted protein) : 25|121
-Séquence 8 (Cervus Cervus elaphus COL1A1 predicted protein) : 25|121
+Séquence 6 (Capreolus Capreolus capreolus COL1A1 predicted protein) : 89|121
+Séquence 8 (Cervus Cervus elaphus COL1A1 predicted protein) : 89|121
+Séquence 27 (Vulpes Vulpes lagopus COL1A1 predicted protein) : 7|121

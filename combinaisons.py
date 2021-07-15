@@ -1,7 +1,7 @@
 from family import *
 from genre import *
 import warnings
-
+import os
 
 # *********************************************************************************************************************
 # FONCTIONS INTERMÉDIAIRES
@@ -221,7 +221,7 @@ def searchCombinations(peptidesOfProteins, speciesOfPeptides, seqWithoutUnique, 
     return combinaisons
 
 
-def createFile(output_file, allResultsFile, combinations, combsGenus, combsFamily, dicoNameSeq, peptideForProt):
+def createFile(output_dir, combinations, combsGenus, combsFamily, dicoNameSeq, peptideForProt):
     """Crée le fichier des résultats des combinaisons
 
     Args:
@@ -238,8 +238,10 @@ def createFile(output_file, allResultsFile, combinations, combsGenus, combsFamil
     Returns:
         list : une liste contenant les séquences n'ayant pas de peptide unique
     """
-    with open(output_file, 'w') as results:
-        with open(allResultsFile, 'a') as allRes:
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    with open(output_dir + 'combinations.txt', 'w') as results:
+        with open(output_dir + 'allResults.txt', 'a') as allRes:
             results.write("Liste des combinaisons uniques (pour les séquences n'ayant pas de peptide unique) : \n\n")
             allRes.write("\n\nListe des combinaisons uniques (pour les séquences n'ayant pas de peptide unique) : \n\n")
             theName = ""
@@ -259,14 +261,14 @@ def createFile(output_file, allResultsFile, combinations, combsGenus, combsFamil
                 "\n\nListe des combinaisons uniques pour chaque séquence, en ne prenant en compte que les séquences de genre différent : \n\n")
             theName = ''
             for seqG, peptidesG in combsGenus.items():
-                if peptides:
+                if peptidesG:
                     for name, nb in dicoNameSeq.items():
                         if nb == seqG:
                             theName = name
-                lineToWrite = "Protéine {} ({}) : {}\n".format(seqG, theName, '|'.join(
-                    map(lambda s: str(s.get_nb_peptide()).strip('[]').replace(' ', ''), peptidesG)))
-                results.write(lineToWrite)
-                allRes.write(lineToWrite)
+                    lineToWrite = "Protéine {} ({}) : {}\n".format(seqG, theName, '|'.join(
+                        map(lambda s: str(s.get_nb_peptide()).strip('[]').replace(' ', ''), peptidesG)))
+                    results.write(lineToWrite)
+                    allRes.write(lineToWrite)
 
             allRes.write(
                 "\n\nListe des combinaisons uniques pour chaque séquence, en ne prenant en compte que les séquences de famille différente : \n\n")
@@ -274,17 +276,17 @@ def createFile(output_file, allResultsFile, combinations, combsGenus, combsFamil
                 "\n\nListe des combinaisons uniques pour chaque séquence, en ne prenant en compte que les séquences de famille différente : \n\n")
             theName = ''
             for seqF, peptidesF in combsFamily.items():
-                if peptides:
+                if peptidesF:
                     for name, nb in dicoNameSeq.items():
                         if nb == seqF:
                             theName = name
-                lineToWrite = "Séquence {} ({}) : {}\n".format(seqF, theName, '|'.join(
-                    map(lambda s: str(s.get_nb_peptide()).strip('[]').replace(' ', ''), peptidesF)))
-                results.write(lineToWrite)
-                allRes.write(lineToWrite)
+                    lineToWrite = "Séquence {} ({}) : {}\n".format(seqF, theName, '|'.join(
+                        map(lambda s: str(s.get_nb_peptide()).strip('[]').replace(' ', ''), peptidesF)))
+                    results.write(lineToWrite)
+                    allRes.write(lineToWrite)
 
 
-def prettyPrint_liste_peptides(output_file, peptideToProtein, dicoNameSeq):
+def prettyPrint_liste_peptides(output_dir, peptideToProtein, dicoNameSeq):
     """Crée l'affichage de la liste complète des peptides avec les positions sur les séquences'
 
         Args:
@@ -298,7 +300,9 @@ def prettyPrint_liste_peptides(output_file, peptideToProtein, dicoNameSeq):
         Returns:
             None
         """
-    with open(output_file, 'a') as results:
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    with open(output_dir + 'allResults.txt', 'a') as results:
         results.write("*********************************************\n")
         results.write("\nLISTE DES PEPTIDES POUR CHAQUE SÉQUENCE :")
         for prot, peps in peptideToProtein.items():
@@ -309,7 +313,7 @@ def prettyPrint_liste_peptides(output_file, peptideToProtein, dicoNameSeq):
                 results.write("\n\tPeptide {} : position {} ; {}".format(peptide.get_nb_peptide(), peptide.get_position(), peptide.get_seq()))
 
 
-def mainSearchCombinations(dicoPeptides, uniquesPeptides, output_file, allResFile, threshold=0):
+def mainSearchCombinations(dicoPeptides, uniquesPeptides, output_dir, threshold=0):
     dicoSeq = dicoNameNumberSequence(dicoPeptides)
     speciesForPeptides = searchSpeciesForPeptides(dicoPeptides)
     peptidesToProtein = assignPeptideToProtein(speciesForPeptides)
@@ -318,12 +322,12 @@ def mainSearchCombinations(dicoPeptides, uniquesPeptides, output_file, allResFil
     seqToGen = seqToGenus(peptidesToProtein)
     seqToFam = seqToFamily(peptidesToProtein)
 
-    seqWithoutUniqueGenre = mainGenre(dicoPeptides, allResFile, peptidesToProtein)
-    seqWithoutUniqueFamily = mainFamily(dicoPeptides, allResFile, peptidesToProtein)
+    seqWithoutUniqueGenre = mainGenre(dicoPeptides, output_dir, peptidesToProtein)
+    seqWithoutUniqueFamily = mainFamily(dicoPeptides, output_dir, peptidesToProtein)
 
     combinations = searchCombinations(peptidesToProtein, speciesForPeptides, seqWithoutUnique, dicoSeq)
     combsFamily = searchCombinations(peptidesToProtein, speciesForPeptides, seqWithoutUniqueFamily, dicoSeq, seqToFam)
     combsGenus = searchCombinations(peptidesToProtein, speciesForPeptides, seqWithoutUniqueGenre, dicoSeq, seqToGen)
 
-    createFile(output_file, allResFile, combinations, combsGenus, combsFamily, dicoSeq, peptidesToProtein)
-    prettyPrint_liste_peptides(allResFile, peptidesToProtein, dicoSeq)
+    createFile(output_dir, combinations, combsGenus, combsFamily, dicoSeq, peptidesToProtein)
+    prettyPrint_liste_peptides(output_dir, peptidesToProtein, dicoSeq)
