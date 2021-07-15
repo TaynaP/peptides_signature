@@ -161,7 +161,7 @@ def unique_pep_family(dico_pep_family):
     return sorted(unique_pep_family_list, key=lambda pep: pep.get_family())
 
 
-def pretty_print_unique_peptide_family(liste, output_file, allResultsFile):
+def pretty_print_unique_peptide_family(liste, output_dir):
     """Permet le formatage du fichier txt seulement pour les peptides uniques pour chaque famille
 
     Args:
@@ -172,8 +172,10 @@ def pretty_print_unique_peptide_family(liste, output_file, allResultsFile):
     Raises:
         TypeError: if the parameters is not a list and a str
     """
-    with open(output_file, 'w', newline='') as results:
-        with open(allResultsFile, 'a', newline='') as allRes:
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    with open(output_dir + 'unique_pep_family.txt', 'w', newline='') as results:
+        with open(output_dir + 'allResults.txt', 'a', newline='') as allRes:
             writer_all = csv.writer(allRes, delimiter='|')
             writer_family = csv.writer(results, delimiter='|')
             writer_all.writerow("")

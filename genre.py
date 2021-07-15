@@ -127,8 +127,28 @@ def where_pep_present_genre(dico):
             pep] = genus_list  # le dico avec pour chaque peptide, les espèces regroupées en genre auquel il apparaît
     return dico_genre
 
+def unique_pep_genre(dico_pep_genre):
+    """Let the user find the peptides that are unique to only one genus (if the peptide appears only in one genus).
 
-def pretty_print_unique_peptide_genus(liste, output_file, allResultsFile):
+    Args:
+        dico_pep_genre (dict): the dictonnary made in where_pep_present_genre()
+
+    Returns:
+        list: the list containing the peptides that are unique for one genus
+    """
+    unique_pep_genre_list = []
+    for pep, genre_list in dico_pep_genre.items():
+        unique = True
+        for i in range(len(genre_list)):
+            if i > 0:  # si la liste contient plus d'une sous liste, c'est que le peptide apparaît dans plus d'un genre donc il n'est pas unique à un genre
+                unique = False
+                break
+        if unique:
+            unique_pep_genre_list.append(pep)
+    return unique_pep_genre_list
+
+
+def pretty_print_unique_peptide_genus(liste, output_dir):
     """Permet le formatage du fichier txt seulement pour les peptides uniques pour chaque genre
 
     Args:
@@ -139,8 +159,10 @@ def pretty_print_unique_peptide_genus(liste, output_file, allResultsFile):
     Raises:
         TypeError: if the parameters is not a list and a str
     """
-    with open(output_file, 'w', newline='') as results:
-        with open(allResultsFile, 'a', newline='') as allRes:
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    with open(output_dir + 'unique_pep_genre.txt', 'w', newline='') as results:
+        with open(output_dir + 'allResults.txt', 'a', newline='') as allRes:
             writer_all = csv.writer(allRes, delimiter='|')
             writer_genus = csv.writer(results, delimiter='|')
             writer_all.writerow("")

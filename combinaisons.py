@@ -221,7 +221,7 @@ def searchCombinations(peptidesOfProteins, speciesOfPeptides, seqWithoutUnique, 
     return combinaisons
 
 
-def createFile(output_file, allResultsFile, combinations, combsGenus, combsFamily, dicoNameSeq, peptideForProt):
+def createFile(output_dir, combinations, combsGenus, combsFamily, dicoNameSeq, peptideForProt):
     """Crée le fichier des résultats des combinaisons
 
     Args:
@@ -238,8 +238,10 @@ def createFile(output_file, allResultsFile, combinations, combsGenus, combsFamil
     Returns:
         list : une liste contenant les séquences n'ayant pas de peptide unique
     """
-    with open(output_file, 'w', newline='') as results:
-        with open(allResultsFile, 'a', newline='') as allRes:
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    with open(output_dir + 'combinations.txt', 'w', newline='') as results:
+        with open(output_dir + 'allResults.txt', 'a', newline='') as allRes:
             writer_all = csv.writer(allRes, delimiter='|')
             writer_combi = csv.writer(results, delimiter='|')
             writer_combi.writerow(["List of unique combinations (for sequences that don't have unique peptides) :"])

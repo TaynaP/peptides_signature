@@ -1,23 +1,26 @@
-Liste des combinaisons uniques (pour les séquences n'ayant pas de peptide unique) : 
-
-Protéine 2 (Bison Bison bison bison COL1A1 prot) : 121|28
-Protéine 12 (Equus Equus asinus COL1A1 prot X1) : 2|93
-Protéine 13 (Equus Equus caballus COL1A1 prot) : 2|93
-Protéine 14 (Felis Felis catus COL1A1 prot X1) : 2|75
-Protéine 22 (Panthera Panthera pardus COL1A1 prot X1) : 2|75
-Protéine 26 (Ursus Ursus thibetanus thibetanus COL1A1 predicted protein) : 2|121
-
-
-Liste des combinaisons uniques pour chaque séquence, en ne prenant en compte que les séquences de genre différent : 
-
-Protéine 2 (Bison Bison bison bison COL1A1 prot) : 121|28
-Protéine 14 (Felis Felis catus COL1A1 prot X1) : 2|75
-Protéine 22 (Panthera Panthera pardus COL1A1 prot X1) : 2|75
+List of unique combinations (for sequences that don't have unique peptides) :
+Family|Genus|Name|Peptide nb
+Bovidae|Bison|Bison Bison bison bison COL1A1 prot|25,28
+Canidae|Canis|Canis Canis lupus dingo COL1A1 prot|7,121,83
+Equidae|Equus|Equus Equus asinus COL1A1 prot X1|2,93
+Equidae|Equus|Equus Equus caballus COL1A1 prot|2,93
+Felidae|Felis|Felis Felis catus COL1A1 prot X1|2,75
+Felidae|Panthera|Panthera Panthera pardus COL1A1 prot X1|2,75
+Ursidae|Ursus|Ursus Ursus thibetanus thibetanus COL1A1 predicted protein|2,121
 
 
-Liste des combinaisons uniques pour chaque séquence, en ne prenant en compte que les séquences de famille différente : 
+List of unique combinations for each sequence, only taking into consideration sequences that have different genus
+Bovidae|Bison|Bison Bison bison bison COL1A1 prot|25,28
+Canidae|Canis|Canis Canis lupus dingo COL1A1 prot|7,121,83
+Canidae|Canis|Capreolus Capreolus capreolus COL1A1 predicted protein|
+Canidae|Canis|Ceratotherium Ceratotherium simum simum COL1A1 prot|
+Canidae|Canis|Cervus Cervus elaphus COL1A1 predicted protein|
+Canidae|Canis|Diceros Diceros bicornis COL1A1 predicted protein|
+Felidae|Felis|Felis Felis catus COL1A1 prot X1|2,75
+Felidae|Panthera|Panthera Panthera pardus COL1A1 prot X1|2,75
 
-Séquence 4 (Canis Canis lupus dingo COL1A1 prot) : 7|121
-Séquence 6 (Capreolus Capreolus capreolus COL1A1 predicted protein) : 89|121
-Séquence 8 (Cervus Cervus elaphus COL1A1 predicted protein) : 89|121
-Séquence 27 (Vulpes Vulpes lagopus COL1A1 predicted protein) : 7|121
+
+List of unique combinations for each sequence, only taking into consideration sequences that have different family
+Canidae|Canis|Canis Canis lupus dingo COL1A1 prot|7,121
+Cervidae|Capreolus|Capreolus Capreolus capreolus COL1A1 predicted protein|25,121
+Cervidae|Cervus|Cervus Cervus elaphus COL1A1 predicted protein|25,121

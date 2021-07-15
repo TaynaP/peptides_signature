@@ -132,7 +132,7 @@ def unique_peptide(dico):
     return unique_peptide_list
 
 
-def pretty_print_unique_peptide(liste, output_file, allResultsFile):
+def pretty_print_unique_peptide(liste, output_dir):
     """Permet le formatage du fichier txt seulement pour les peptides uniques pour chaque protéine
 
     Args:
@@ -143,8 +143,10 @@ def pretty_print_unique_peptide(liste, output_file, allResultsFile):
     Raises:
         TypeError: if the parameters is not a list and a str
     """
-    with open(output_file, 'w', newline='') as results:
-        with open(allResultsFile, 'w', newline='') as allRes:
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    with open(output_dir + 'uniquePeptides.txt', 'w', newline='') as results:
+        with open(output_dir + 'allResults.txt', 'w', newline='') as allRes:
             writer_all = csv.writer(allRes, delimiter='|')
             writer_unique = csv.writer(results, delimiter='|')
             writer_all.writerow(["Unique peptides for each sequence :"])
