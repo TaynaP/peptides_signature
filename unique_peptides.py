@@ -132,7 +132,7 @@ def unique_peptide(dico):
     return unique_peptide_list
 
 
-def pretty_print_unique_peptide(liste, output_dir):
+def pretty_print_unique_peptide(liste, output_file, allResultsFile):
     """Permet le formatage du fichier txt seulement pour les peptides uniques pour chaque protéine
 
     Args:
@@ -143,26 +143,14 @@ def pretty_print_unique_peptide(liste, output_dir):
     Raises:
         TypeError: if the parameters is not a list and a str
     """
-    currentSequence = ""
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-    with open(output_dir + 'uniquePeptides.txt', 'w') as results:
-        with open(output_dir + 'allResults.txt', 'w') as allRes:
-            allRes.write('Liste des peptides uniques pour chaque séquence : \n\n')
-            toInsert = []
+    with open(output_file, 'w', newline='') as results:
+        with open(allResultsFile, 'w', newline='') as allRes:
+            writer_all = csv.writer(allRes, delimiter='|')
+            writer_unique = csv.writer(results, delimiter='|')
+            writer_all.writerow(["Unique peptides for each sequence :"])
+            writer_all.writerow(["Family", "Genus", "Name", "Position", "Peptide seq"])
+            writer_unique.writerow(["Family", "Genus", "Name", "Position", "Peptide seq"])
             for peptide in liste:
-                if peptide.get_prot_name() != currentSequence:
-                    if currentSequence != '':
-                        lineToInsert = "{} : {}\n".format(currentSequence, '|'.join(
-                            map(lambda s: str(s).strip('()').replace(' ', ''), toInsert)))
-                        results.write(lineToInsert)
-                        allRes.write(lineToInsert)
-                    currentSequence = peptide.get_prot_name()
-                    toInsert = [peptide.get_nb_peptide()]
-                else:
-                    toInsert.append(peptide.get_nb_peptide())
-            if toInsert:
-                lineToInsert = "{} : {}\n".format(currentSequence, '|'.join(
-                    map(lambda s: str(s).strip('()').replace(' ', ''), toInsert)))
-                results.write(lineToInsert)
-                allRes.write(lineToInsert)
+                rowToInsert = [peptide.get_family(), peptide.get_genus(), peptide.get_prot_name(), peptide.get_position(), peptide.get_seq()]
+                writer_all.writerow(rowToInsert)
+                writer_unique.writerow(rowToInsert) 
