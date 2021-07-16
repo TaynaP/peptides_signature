@@ -45,8 +45,8 @@ Obligatoires :
 
 Facultatifs :
 - -h : message d'aide
-- -p PEPTIDETHRESHOLD : la taille minimale des peptides gardés (par défaut 1)
-- -c COMBINATIONTHRESHOLD : la taille maximale d'une combinaison (par défaut aucune limite)
+- -p : la taille minimale des peptides gardés (par défaut 1)
+- -c : la taille maximale d'une combinaison (par défaut aucune limite)
 
 
 Exemple de commande fonctionnelle :
