@@ -146,13 +146,8 @@ def pretty_print_unique_peptide(liste, output_dir):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     with open(output_dir + 'uniquePeptides.csv', 'w', newline='') as results:
-        with open(output_dir + 'allResults.csv', 'w', newline='') as allRes:
-            writer_all = csv.writer(allRes, delimiter='|')
-            writer_unique = csv.writer(results, delimiter='|')
-            writer_all.writerow(["Unique peptides for each sequence :"])
-            writer_all.writerow(["Family", "Genus", "Name", "Position", "Peptide seq"])
-            writer_unique.writerow(["Family", "Genus", "Name", "Position", "Peptide seq"])
-            for peptide in liste:
-                rowToInsert = [peptide.get_family(), peptide.get_genus(), peptide.get_prot_name(), peptide.get_position(), peptide.get_seq()]
-                writer_all.writerow(rowToInsert)
-                writer_unique.writerow(rowToInsert) 
+        writer_unique = csv.writer(results)
+        writer_unique.writerow(["Family", "Genus", "Name of prot", "Position", "Peptide mass", "Peptide seq"])
+        for peptide in liste:
+            rowToInsert = [peptide.get_family(), peptide.get_genus(), peptide.get_prot_name(), peptide.get_position(), peptide.get_mass(), peptide.get_seq()]
+            writer_unique.writerow(rowToInsert) 
