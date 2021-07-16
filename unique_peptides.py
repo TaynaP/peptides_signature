@@ -89,6 +89,8 @@ def pretty_print_all(dico, output_dir):
     currentSequence = ""
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
+    else:
+        raise Exception("The directory " + output_dir + " already exists. Please give another directory.")
     with open(output_dir + 'liste_peptides.txt', 'w') as results:
         peptides = list(dico.keys())
         for pep in peptides:

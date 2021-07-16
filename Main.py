@@ -5,8 +5,6 @@ from combinaisons import *
 from unique_peptides import *
 import argparse
 
-os.chmod("Main.py", 0o755)
-
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
