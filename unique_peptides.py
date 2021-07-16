@@ -34,7 +34,7 @@ def parse_csv(file, threshold=1):
                 nb_prot += 1
                 current_prot_name = prot_name
             nb_peptide = int(row[1]) + 1
-            list_pep.append(Peptides(row[7], int(row[1]) + 1, prot_name, nb_prot, genus, family, row[3]))
+            list_pep.append(Peptides(row[7], int(row[1]) + 1, prot_name, nb_prot, genus, family, row[3], row[5]))
     return list_pep
 
 

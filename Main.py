@@ -16,6 +16,9 @@ if __name__ == "__main__":
     parser.add_argument("-c", "--combinationThreshold", help="The maximum size of a combination (default no limit)", type=int, default=0)
     args = parser.parse_args()
 
+    if args.resultsPath[-1] != '/':
+        args.resultsPath += '/'
+
     pep = parse_csv(args.peptidesCSVFile, args.peptideThreshold)
     dict_p = compare_peptide(pep)
 

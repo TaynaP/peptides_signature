@@ -2,7 +2,7 @@ class Peptides(object):
     """Classe pour représenter les peptides donnés par RPG
     """
 
-    def __init__(self, seq, nb_peptide, prot_name, nb_prot, genus, family, position):
+    def __init__(self, seq, nb_peptide, prot_name, nb_prot, genus, family, position, mass):
         self.__seq = seq
         self.__nb_peptide = nb_peptide
         self.__prot_name = prot_name
@@ -10,6 +10,7 @@ class Peptides(object):
         self.__genus = genus
         self.__family = family
         self.__position = position
+        self.__mass = mass
 
     # Getter
     def get_seq(self):
@@ -32,3 +33,6 @@ class Peptides(object):
 
     def get_position(self):
         return self.__position
+    
+    def get_mass(self):
+        return self.__mass
