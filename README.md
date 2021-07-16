@@ -15,7 +15,7 @@ Ce dossier contient 2 dossiers : results (fichiers générés par le code, nos r
 - Utils est un fichier où sont stockées les fonctions dont nous ne nous servons plus pour le moment
 - Main contient uniquement la fonction main
 
-## Contrainte technique
+## Contraintes techniques
 
 - Python 3
 - RPG 1.2.4
