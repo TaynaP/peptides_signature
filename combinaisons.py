@@ -208,16 +208,17 @@ def searchCombinations(peptidesOfProteins, speciesOfPeptides, seqWithoutUnique, 
         for s, p in combinaisons.items():
             if not p:
                 warning.append(s)
-        lineWarn = "\n*********\nLes séquences suivantes n\'ont ni peptide unique, ni combinaison de peptides uniques :\n"
-        for elt in warning:
-            theName = ""
-            for name, nb in dicoNameSeq.items():
-                if nb == elt:
-                    theName = name
-            lineWarn += theName
-            lineWarn += '\n'
-        lineWarn += '**********'
-        print(lineWarn)
+        if warning:
+            lineWarn = "\n*********\nLes séquences suivantes n\'ont ni peptide unique, ni combinaison de peptides uniques :\n"
+            for elt in warning:
+                theName = ""
+                for name, nb in dicoNameSeq.items():
+                    if nb == elt:
+                        theName = name
+                lineWarn += theName
+                lineWarn += '\n'
+            lineWarn += '**********'
+            print(lineWarn)
     return combinaisons
 
 
@@ -341,9 +342,9 @@ def mainSearchCombinations(dicoPeptides, uniquesPeptides, output_dir, threshold=
     seqWithoutUniqueGenre = mainGenre(dicoPeptides, output_dir, peptidesToProtein)
     seqWithoutUniqueFamily = mainFamily(dicoPeptides, output_dir, peptidesToProtein)
 
-    combinations = searchCombinations(peptidesToProtein, speciesForPeptides, seqWithoutUnique, dicoSeq)
-    combsFamily = searchCombinations(peptidesToProtein, speciesForPeptides, seqWithoutUniqueFamily, dicoSeq, seqToFam)
-    combsGenus = searchCombinations(peptidesToProtein, speciesForPeptides, seqWithoutUniqueGenre, dicoSeq, seqToGen)
+    combinations = searchCombinations(peptidesToProtein, speciesForPeptides, seqWithoutUnique, dicoSeq, {}, threshold)
+    combsFamily = searchCombinations(peptidesToProtein, speciesForPeptides, seqWithoutUniqueFamily, dicoSeq, seqToFam, threshold)
+    combsGenus = searchCombinations(peptidesToProtein, speciesForPeptides, seqWithoutUniqueGenre, dicoSeq, seqToGen, threshold)
 
     createFile(output_dir, combinations, combsGenus, combsFamily, dicoSeq, peptidesToProtein)
     prettyPrint_liste_peptides(output_dir, peptidesToProtein, dicoSeq)
