@@ -55,6 +55,12 @@ Exemple de commande fonctionnelle :
 $ python3 Main.py fichier/COL1A1_trypsin.csv results/
 `
 
+Exemple de commande fonctionnelle avec options :
+
+`
+$ python3 Main.py fichier/COL1A1_trypsin.csv results/ -p 5 -c 1
+`
+
 ### Syntaxe du fichier d'entrée
 
 C'est un fichier CSV qui doit correspondre à une digestion in silico. Il peut être très facilement réalisable par RPG.
@@ -86,3 +92,8 @@ Et en lançant un conteneur Docker en liant un répertoire sur la machine hôte 
 `
 $ docker run -v chemin/répertoire/sur/la/machine/hôte:/app/results [nom de l'image]
 `
+
+## Auteurs
+
+- Léa Vandamme 
+- Tayna Pellegri
