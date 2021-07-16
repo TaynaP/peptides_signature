@@ -175,17 +175,11 @@ def pretty_print_unique_peptide_family(liste, output_dir):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     with open(output_dir + 'unique_pep_family.csv', 'w', newline='') as results:
-        with open(output_dir + 'allResults.csv', 'a', newline='') as allRes:
-            writer_all = csv.writer(allRes, delimiter='|')
-            writer_family = csv.writer(results, delimiter='|')
-            writer_all.writerow("")
-            writer_all.writerow("")
-            writer_all.writerow(["Unique peptides for each family :"])
-            writer_family.writerow(["Family", "Genus", "Name", "Position", "Peptide seq"])
-            for peptide in liste:
-                rowToInsert = [peptide.get_family(), peptide.get_genus(), peptide.get_prot_name(), peptide.get_position(), peptide.get_seq()]
-                writer_all.writerow(rowToInsert)
-                writer_family.writerow(rowToInsert)
+        writer_family = csv.writer(results)
+        writer_family.writerow(["Family", "Genus", "Name of Prot", "Position", "Peptide mass", "Peptide seq"])
+        for peptide in liste:
+            rowToInsert = [peptide.get_family(), peptide.get_genus(), peptide.get_prot_name(), peptide.get_position(), peptide.get_mass(), peptide.get_seq()]
+            writer_family.writerow(rowToInsert)
 
 
 def mainFamily(dict_p, output_dir, peptidesToProtein):
