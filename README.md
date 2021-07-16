@@ -78,11 +78,11 @@ A noter que nous fournissons un fichier exemple "COL1A1_trypsin.csv" pour faire 
 Il est possible de lancer le programme en passant par Docker, en créant une image :
 
 `
-docker build --tag [nom de l'image] .
+$ docker build --tag [nom de l'image] .
 `
 
 Et en lançant un conteneur Docker en liant un répertoire sur la machine hôte (pour permettre de retrouver les fichiers résultats créés) :
 
 `
-docker run -v chemin/répertoire/sur/la/machine/hôte:/app/results [nom de l'image]
+$ docker run -v chemin/répertoire/sur/la/machine/hôte:/app/results [nom de l'image]
 `
