@@ -162,17 +162,11 @@ def pretty_print_unique_peptide_genus(liste, output_dir):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     with open(output_dir + 'unique_pep_genre.csv', 'w', newline='') as results:
-        with open(output_dir + 'allResults.csv', 'a', newline='') as allRes:
-            writer_all = csv.writer(allRes, delimiter='|')
-            writer_genus = csv.writer(results, delimiter='|')
-            writer_all.writerow("")
-            writer_all.writerow("")
-            writer_all.writerow(["Unique peptides for each genus :"])
-            writer_genus.writerow(["Family", "Genus", "Name", "Position", "Peptide seq"])
-            for peptide in liste:
-                rowToInsert = [peptide.get_family(), peptide.get_genus(), peptide.get_prot_name(), peptide.get_position(), peptide.get_seq()]
-                writer_all.writerow(rowToInsert)
-                writer_genus.writerow(rowToInsert)
+        writer_genus = csv.writer(results)
+        writer_genus.writerow(["Family", "Genus", "Name of prot", "Position", "Peptide mass", "Peptide seq"])
+        for peptide in liste:
+            rowToInsert = [peptide.get_family(), peptide.get_genus(), peptide.get_prot_name(), peptide.get_position(), peptide.get_mass(), peptide.get_seq()]
+            writer_genus.writerow(rowToInsert)
 
 
 def mainGenre(dict_p, output_dir, peptidesToProtein):
