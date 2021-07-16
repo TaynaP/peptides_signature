@@ -242,67 +242,43 @@ def createFile(output_dir, combinations, combsGenus, combsFamily, dicoNameSeq, p
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     with open(output_dir + 'combinations.csv', 'w', newline='') as results:
-        with open(output_dir + 'allResults.csv', 'a', newline='') as allRes:
-            writer_all = csv.writer(allRes, delimiter='|')
-            writer_combi = csv.writer(results, delimiter='|')
-            writer_combi.writerow(["List of unique combinations (for sequences that don't have unique peptides) :"])
-            writer_combi.writerow(["Family", "Genus", "Name", "Peptide nb"])
-            writer_all.writerow("")
-            writer_all.writerow("")
-            writer_all.writerow(["List of unique combinations (for sequences that don't have unique peptides) :"])
-            writer_all.writerow(["Family", "Genus", "Name", "Peptide nb"])
-            theName = ""
-            for seq, peptides in combinations.items():
-                if peptides:
-                    for name, nb in dicoNameSeq.items():
-                        if nb == seq:
-                            theName = name
-                    liste_pep_combi = []
-                    for pep in peptides:
-                        liste_pep_combi.append(str(pep.get_nb_peptide()))
-                    pep = peptides[0]
-                    writer_all.writerow([pep.get_family(), pep.get_genus(), theName, ",".join(liste_pep_combi)])
-                    writer_combi.writerow([pep.get_family(), pep.get_genus(), theName, ",".join(liste_pep_combi)])
+        writer_combi = csv.writer(results)
+        writer_combi.writerow(["List of unique combinations (for sequences that don't have unique peptides) :"])
+        writer_combi.writerow(["Family", "Genus", "Name of prot", "Position", "Peptide mass", "Sequence"])
+        theName = ""
+        for seq, peptides in combinations.items():
+            if peptides:
+                for name, nb in dicoNameSeq.items():
+                    if nb == seq:
+                        theName = name
+                for pep in peptides:
+                    writer_combi.writerow([pep.get_family(), pep.get_genus(), theName, pep.get_position(), pep.get_mass(), pep.get_seq()])
 
-            writer_all.writerow("")
-            writer_all.writerow("")
-            writer_all.writerow(["List of unique combinations for each sequence, only taking into consideration sequences that have different genus"])
-            writer_combi.writerow("")
-            writer_combi.writerow("")
-            writer_combi.writerow(["List of unique combinations for each sequence, only taking into consideration sequences that have different genus"])
-            theName = ''
-            for seqG, peptidesG in combsGenus.items():
-                if peptides:
-                    for name, nb in dicoNameSeq.items():
-                        if nb == seqG:
-                            theName = name
-                liste_pep_combi_genus = []
-                for pep in peptidesG:
-                    liste_pep_combi_genus.append(pep)
-                    peptoUse = pep
-                writer_all.writerow([peptoUse.get_family(), peptoUse.get_genus(), theName, ",".join(map(lambda s: str(s.get_nb_peptide()), liste_pep_combi_genus))])
-                writer_combi.writerow([peptoUse.get_family(), peptoUse.get_genus(), theName, ",".join(map(lambda s: str(s.get_nb_peptide()), liste_pep_combi_genus))])
+        writer_combi.writerow("")
+        writer_combi.writerow("")
+        writer_combi.writerow(["List of unique combinations for each sequence, only taking into consideration sequences that have different genus"])
+        theName = ''
+        for seqG, peptidesG in combsGenus.items():
+            if peptides:
+                for name, nb in dicoNameSeq.items():
+                    if nb == seqG:
+                        theName = name
+            for pep in peptidesG:
+                writer_combi.writerow([pep.get_family(), pep.get_genus(), theName, pep.get_position(), pep.get_mass(), pep.get_seq()])
 
-            writer_all.writerow("")
-            writer_all.writerow("")
-            writer_all.writerow(["List of unique combinations for each sequence, only taking into consideration sequences that have different family"])
-            writer_combi.writerow("")
-            writer_combi.writerow("")
-            writer_combi.writerow(["List of unique combinations for each sequence, only taking into consideration sequences that have different family"])
-            theName = ''
-            for seqF, peptidesF in combsFamily.items():
-                if peptides:
-                    for name, nb in dicoNameSeq.items():
-                        if nb == seqF:
-                            theName = name
-                liste_pep_combi_family = []
-                for pep in peptidesF:
-                    liste_pep_combi_family.append(pep)
-                    peptoUse = pep
-                writer_all.writerow([peptoUse.get_family(), peptoUse.get_genus(), theName, ",".join(map(lambda s: str(s.get_nb_peptide()), liste_pep_combi_family))])
-                writer_combi.writerow([peptoUse.get_family(), peptoUse.get_genus(), theName, ",".join(map(lambda s: str(s.get_nb_peptide()), liste_pep_combi_family))])
+        writer_combi.writerow("")
+        writer_combi.writerow("")
+        writer_combi.writerow(["List of unique combinations for each sequence, only taking into consideration sequences that have different family"])
+        theName = ''
+        for seqF, peptidesF in combsFamily.items():
+            if peptides:
+                for name, nb in dicoNameSeq.items():
+                    if nb == seqF:
+                        theName = name
+            for pep in peptidesF:
+                writer_combi.writerow([pep.get_family(), pep.get_genus(), theName, pep.get_position(), pep.get_mass(), pep.get_seq()])
 
-
+'''
 def prettyPrint_liste_peptides(output_dir, peptideToProtein, dicoNameSeq):
     """Crée l'affichage de la liste complète des peptides avec les positions sur les séquences'
 
@@ -328,7 +304,7 @@ def prettyPrint_liste_peptides(output_dir, peptideToProtein, dicoNameSeq):
                     results.write("\n\nProtéine : {}".format(name))
             for peptide in peps:
                 results.write("\n\tPeptide {} : position {} ; {}".format(peptide.get_nb_peptide(), peptide.get_position(), peptide.get_seq()))
-
+'''
 
 def mainSearchCombinations(dicoPeptides, uniquesPeptides, output_dir, threshold=0):
     dicoSeq = dicoNameNumberSequence(dicoPeptides)
@@ -347,4 +323,4 @@ def mainSearchCombinations(dicoPeptides, uniquesPeptides, output_dir, threshold=
     combsGenus = searchCombinations(peptidesToProtein, speciesForPeptides, seqWithoutUniqueGenre, dicoSeq, seqToGen, threshold)
 
     createFile(output_dir, combinations, combsGenus, combsFamily, dicoSeq, peptidesToProtein)
-    prettyPrint_liste_peptides(output_dir, peptidesToProtein, dicoSeq)
+    #prettyPrint_liste_peptides(output_dir, peptidesToProtein, dicoSeq)
