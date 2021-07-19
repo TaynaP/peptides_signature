@@ -16,6 +16,8 @@ if __name__ == "__main__":
 
     if args.resultsPath[-1] != '/':
         args.resultsPath += '/'
+    if args.resultsPath[0] == '/':
+        args.resultsPath = args.resultsPath[1:]
 
     pep = parse_csv(args.peptidesCSVFile, args.peptideThreshold)
     dict_p = compare_peptide(pep)

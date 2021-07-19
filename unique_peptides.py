@@ -145,8 +145,6 @@ def pretty_print_unique_peptide(liste, output_dir):
     Raises:
         TypeError: if the parameters is not a list and a str
     """
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
     with open(output_dir + 'uniquePeptides.csv', 'w', newline='') as results:
         writer_unique = csv.writer(results)
         writer_unique.writerow(["Family", "Genus", "Name of prot", "Position", "Peptide mass", "Peptide seq"])
