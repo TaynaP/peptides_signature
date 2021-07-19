@@ -87,10 +87,6 @@ def pretty_print_all(dico, output_dir):
         TypeError: if the parameters is not a dict and a str
     """
     currentSequence = ""
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-    else:
-        raise Exception("This directory already exists. Please give another directory.")
     with open(output_dir + 'liste_peptides.txt', 'w') as results:
         peptides = list(dico.keys())
         for pep in peptides:
