@@ -29,19 +29,19 @@ $ chmod u+x Main.py
 `
 
 `
-$ ./Main.py [-h] [-p PEPTIDETHRESHOLD] [-c COMBINATIONTHRESHOLD] peptidesCSVFile resultsPath
+$ ./Main.py [-h] [-p PEPTIDETHRESHOLD] [-c COMBINATIONTHRESHOLD] -i peptidesCSVFile -o resultsPath
 `
 
 Ou :
 
 `
-$ python3 Main.py [-h] [-p PEPTIDETHRESHOLD] [-c COMBINATIONTHRESHOLD] peptidesCSVFile resultsPath
+$ python3 Main.py [-h] [-p PEPTIDETHRESHOLD] [-c COMBINATIONTHRESHOLD] -i peptidesCSVFile -o resultsPath
 `
 ### Paramètres
 
 Obligatoires :
--  peptidesCSVFile : le nom du fichier contenant la liste des peptides (le fichier csv)
-- resultsPath : le dossier (chemin) qui contiendra tous les fichiers résultats (ex : results/), le chemin doit se finir par un '/'.
+- -i : le nom du fichier input contenant la liste des peptides (le fichier csv)
+- -o : le dossier (chemin) qui contiendra tous les fichiers résultats (ex : results/), le chemin doit se finir par un '/'.
 
 Facultatifs :
 - -h : message d'aide
@@ -52,13 +52,13 @@ Facultatifs :
 Exemple de commande fonctionnelle :
 
 `
-$ python3 Main.py fichier/COL1A1_trypsin.csv results/
+$ python3 Main.py -i fichier/COL1A1_trypsin.csv -o results/
 `
 
 Exemple de commande fonctionnelle avec options :
 
 `
-$ python3 Main.py fichier/COL1A1_trypsin.csv results/ -p 5 -c 1
+$ python3 Main.py -i fichier/COL1A1_trypsin.csv -o results/ -p 5 -c 1
 `
 
 ### Syntaxe du fichier d'entrée
