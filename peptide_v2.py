@@ -36,3 +36,9 @@ class Peptides(object):
     
     def get_mass(self):
         return self.__mass
+
+    def __str__(self):
+        return f"Peptide's  number : {self.__nb_peptide}; position : {self.__position}; protein name : {self.__prot_name}{self.__nb_prot}; seq : {self.__seq}; family : {self.__family}; genus : {self.__genus}; mass : {self.__mass} "
+
+    def __repr__(self):
+        return f'Peptide(seq={self.__seq}, nb={self.__nb_peptide}, protein name={self.__prot_name}, nb protein={self.__nb_prot}, genus={self.__genus}, family={self.__family}, position={self.__position}, mass={self.__mass})'
