@@ -8,8 +8,8 @@ import argparse
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("-i","--peptidesCSVFile", help="The name of the file containing peptides (CSV File)", type=str)
-    parser.add_argument("-o", "--resultsPath", help="The directory (path) wich will contain all the result files (ex : results/)", type=str)
+    parser.add_argument("-i","--peptidesCSVFile", required=True, help="The name of the file containing peptides (CSV File)", type=str)
+    parser.add_argument("-o", "--resultsPath", required=True, help="The directory (path) wich will contain all the result files (ex : results/)", type=str)
     parser.add_argument("-p", "--peptideThreshold", help="The minimum length of the peptides we keep (default 1)", type=int, default=1)
     parser.add_argument("-c", "--combinationThreshold", help="The maximum size of a combination (default no limit)", type=int, default=0)
     args = parser.parse_args()
