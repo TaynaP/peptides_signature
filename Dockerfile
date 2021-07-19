@@ -17,6 +17,5 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-CMD ["python3", "Main.py", "fichier/COL1A1_trypsin.csv", "results/"]
-
-
+ENTRYPOINT ["python3", "Main.py"]
+CMD ["-h"]
