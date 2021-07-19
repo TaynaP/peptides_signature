@@ -15,12 +15,8 @@ RUN apt install -y python3.9
 RUN apt install -y python3-pip
 RUN pip3 install -r requirements.txt
 
-COPY commands.sh /scripts/commands.sh
-
-RUN ["chmod", "+x", "/scripts/commands.sh"]
-
 COPY . .
 
-CMD ["/scripts/commands.sh"]
+CMD ["python3", "Main.py", "fichier/COL1A1_trypsin.csv", "results/"]
 
 
