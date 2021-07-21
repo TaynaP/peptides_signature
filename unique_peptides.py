@@ -129,8 +129,15 @@ def unique_peptide(dico):
         raise Exception("There are no unique peptides")
     return unique_peptide_list
 
+def getAllSequencesName(liste_peptides):
+    res = []
+    for elt in liste_peptides:
+        if elt.get_prot_name() not in res:
+            res.append(elt.get_prot_name())
+    return res
 
-def pretty_print_unique_peptide(liste, output_dir):
+
+def pretty_print_unique_peptide(liste, listeAllSeqNames, output_dir):
     """Permet le formatage du fichier txt seulement pour les peptides uniques pour chaque protéine
 
     Args:
@@ -146,4 +153,16 @@ def pretty_print_unique_peptide(liste, output_dir):
         writer_unique.writerow(["Family", "Genus", "Name of prot", "Position", "Peptide mass", "Peptide seq"])
         for peptide in liste:
             rowToInsert = [peptide.get_family(), peptide.get_genus(), peptide.get_prot_name(), peptide.get_position(), peptide.get_mass(), peptide.get_seq()]
-            writer_unique.writerow(rowToInsert) 
+            writer_unique.writerow(rowToInsert)
+        writer_unique.writerow("")
+        noUnique = []
+        for nameProt in listeAllSeqNames:
+            tmp = False
+            for elt in liste :
+                if nameProt == elt.get_prot_name():
+                    tmp = True
+            if not tmp:
+                noUnique.append(nameProt)
+        strNoUnique = ",".join(noUnique)
+        writer_unique.writerow(["Les séquences suivantes n'ont pas de peptide unique : " + strNoUnique])
+

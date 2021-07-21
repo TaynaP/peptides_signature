@@ -32,7 +32,8 @@ if __name__ == "__main__":
 
     # On crée le fichier contenant les peptides uniques
     u = unique_peptide(dict_p)
-    pretty_print_unique_peptide(u, args.resultsPath)
+    listeAllPeptides = getAllSequencesName(pep)
+    pretty_print_unique_peptide(u, listeAllPeptides, args.resultsPath)
 
     # Pour les séquences sans peptides uniques, on va chercher une combinaison (pour la séquence, ou le genre/la famille)
     mainSearchCombinations(dict_p, u, args.resultsPath, args.combinationThreshold)
