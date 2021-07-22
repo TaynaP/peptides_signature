@@ -116,3 +116,5 @@ Ursidae,Ursus,Ursus arctos horribilis COL1A1 prot X1,43,3755.9403901477694,LLLLV
 Ursidae,Ursus,Ursus arctos horribilis COL1A1 prot X1,1461,2940.4653049961403,LPIIDVAPLDIGAPDQEFGMDVGPVCFL
 Ursidae,Ursus,Ursus thibetanus thibetanus COL1A1 predicted protein,43,3755.9403901477694,LLLLVAATALLTHGQEEGQEEEDIPPVTCVQNGLR
 Canidae,Vulpes,Vulpes lagopus COL1A1 predicted protein,1089,851.46134983889,GPAGPQGLR
+
+"Genera that don't have a unique peptide :Bison,Canis,Capreolus,Ceratotherium,Cervus,Diceros,Felis,Panthera"
