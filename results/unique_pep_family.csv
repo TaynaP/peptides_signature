@@ -1,4 +1,4 @@
-Family,Genus,Name of Prot,Position,Peptide mass,Peptide seq
+Family,Genus,Protein Name,Position,Peptide mass,Peptide seq
 Bovidae,Bison,Bison bison bison COL1A1 prot,360,853.40422888465,GEGGPQGPR
 Bovidae,Bison,Bison bison bison COL1A1 prot,1463,2914.4462836283597,LPIIDVAPLDVGAPDQEFGFDVGPACFL
 Bovidae,Bos,Bos taurus COL1A1 prot,360,853.40422888465,GEGGPQGPR
@@ -144,3 +144,5 @@ Suidae,Sus,Sus scrofa COL1A1 prot X1,1466,2952.51944857023,LPIIDVAPLDVGAPDQEFGID
 Ursidae,Ursus,Ursus arctos horribilis COL1A1 prot X1,43,3755.9403901477694,LLLLVAATALLTHGQEEGQEEEDIPPVTCVQNGLR
 Ursidae,Ursus,Ursus arctos horribilis COL1A1 prot X1,1461,2940.4653049961403,LPIIDVAPLDIGAPDQEFGMDVGPVCFL
 Ursidae,Ursus,Ursus thibetanus thibetanus COL1A1 predicted protein,43,3755.9403901477694,LLLLVAATALLTHGQEEGQEEEDIPPVTCVQNGLR
+
+Families that don't have a unique peptide :
