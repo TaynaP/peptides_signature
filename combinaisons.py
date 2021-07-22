@@ -244,7 +244,7 @@ def createFile(output_dir, combinations, combsGenus, combsFamily, dicoNameSeq, p
     with open(output_dir + 'combinations.csv', 'w', newline='') as results:
         writer_combi = csv.writer(results)
         writer_combi.writerow(["List of unique combinations (for sequences that don't have unique peptides) :"])
-        writer_combi.writerow(["Family", "Genus", "Name of prot", "Position", "Peptide mass", "Sequence"])
+        writer_combi.writerow(["Family", "Genus", "Protein Name", "Position", "Peptide mass", "Sequence"])
         theName = ""
         for seq, peptides in combinations.items():
             if peptides:
@@ -256,6 +256,18 @@ def createFile(output_dir, combinations, combsGenus, combsFamily, dicoNameSeq, p
                 for pep in peptides[1:]:
                     toAppend.append(pep.get_position()); toAppend.append(pep.get_mass()); toAppend.append(pep.get_seq())
                 writer_combi.writerow(toAppend)
+            else:
+                nocombi = []
+                nocombi.append(seq)
+                for elt in nocombi:
+                    theName = ""
+                    for name, nb in dicoNameSeq.items():
+                        if nb == elt:
+                            theName = name
+                            nocombiName.append(theName)
+        strNoCombiName = ",".join(nocombiName)                    
+        writer_combi.writerow("")
+        writer_combi.writerow(["Sequences that don't have a unique peptide nore a unique combination :" + strNoCombiName])
 
 
         writer_combi.writerow("")
@@ -272,6 +284,18 @@ def createFile(output_dir, combinations, combsGenus, combsFamily, dicoNameSeq, p
                 for pep in peptidesG[1:]:
                     toAppendG.append(pep.get_position()); toAppendG.append(pep.get_mass()); toAppendG.append(pep.get_seq())
                 writer_combi.writerow(toAppendG)
+            else:
+                nocombiG = []
+                nocombiG.append(seqG)
+                for elt in nocombiG:
+                    theName = ""
+                    for name, nb in dicoNameSeq.items():
+                        if nb == elt:
+                            theName = name
+                            nocombiNameG.append(theName)
+        strNoCombiNameG = ",".join(nocombiNameG)                    
+        writer_combi.writerow("")
+        writer_combi.writerow(["Sequences that don't have a unique peptide nore a unique combination :" + strNoCombiNameG])
 
         writer_combi.writerow("")
         writer_combi.writerow("")
@@ -287,6 +311,18 @@ def createFile(output_dir, combinations, combsGenus, combsFamily, dicoNameSeq, p
                 for pep in peptidesF[1:]:
                     toAppendF.append(pep.get_position()); toAppendF.append(pep.get_mass()); toAppendF.append(pep.get_seq())
                 writer_combi.writerow(toAppendF)
+            else:
+                nocombiF = []
+                nocombiF.append(seqF)
+                for elt in nocombiF:
+                    theName = ""
+                    for name, nb in dicoNameSeq.items():
+                        if nb == elt:
+                            theName = name
+                            nocombiNameF.append(theName)
+        strNoCombiNameF = ",".join(nocombiNameF)                    
+        writer_combi.writerow("")
+        writer_combi.writerow(["Sequences that don't have a unique peptide nore a unique combination :" + strNoCombiNameF])
 
 '''
 def prettyPrint_liste_peptides(output_dir, peptideToProtein, dicoNameSeq):
