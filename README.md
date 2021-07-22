@@ -80,10 +80,10 @@ Exemple :
 
 ## Fichiers résultats
 
-- uniquePeptides.csv : contient les peptides uniques par protéine
-- unique_pep_genre.csv : contient les peptides uniques par genre
-- unique_pep_family.csv : contient les peptides uniques par famille
-- combinations.csv : contient les combinaisons unique de peptides par protéine, genre et famille
+- uniquePeptides.csv : contient les peptides caractéristiques d'une séquence (qui n'apparaissent que dans une séquence)
+- unique_pep_genre.csv : contient les peptides caractéristiques d'un genre (qui n'apparaissent que dans un seul genre)
+- unique_pep_family.csv : contient les peptides caractéristiques d'une famille (qui n'apparaissent que dans une seule famille)
+- combinations.csv : contient les combinaisons unique de peptides par protéine, genre et famille (des peptides qui n'apparaissent simultanément que dans une séquence, un genre ou une famille)
 - liste_peptides.txt : contient la liste de tous les peptides associés aux peptides qui leurs sont identiques.  
 
 A noter que nous fournissons un fichier exemple "COL1A1_trypsin.csv" pour faire un test.
