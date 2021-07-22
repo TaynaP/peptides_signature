@@ -161,7 +161,7 @@ def pretty_print_unique_peptide(liste, listeAllSeqNames, output_dir):
     """
     with open(output_dir + 'uniquePeptides.csv', 'w', newline='') as results:
         writer_unique = csv.writer(results)
-        writer_unique.writerow(["Family", "Genus", "Name of protein", "Position", "Peptide mass", "Peptide Sequence"])
+        writer_unique.writerow(["Family", "Genus", "Protein Name", "Position", "Peptide mass", "Peptide Sequence"])
         for peptide in liste:
             rowToInsert = [peptide.get_family(), peptide.get_genus(), peptide.get_prot_name(), peptide.get_position(), peptide.get_mass(), peptide.get_seq()]
             writer_unique.writerow(rowToInsert)
