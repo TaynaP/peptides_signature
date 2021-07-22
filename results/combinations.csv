@@ -1,5 +1,5 @@
 List of unique combinations (for sequences that don't have unique peptides) :
-Family,Genus,Name of prot,Position,Peptide mass,Sequence
+Family,Genus,Protein Name,Position,Peptide mass,Sequence
 Bovidae,Bison,Bison Bison bison bison COL1A1 prot,360,853.40422888465,GEGGPQGPR,414,1536.77972384078,GANGAPGIAGAPGFPGAR
 Canidae,Canis,Canis Canis lupus dingo COL1A1 prot,110,3468.4578070695497,NCPGAQVPPGECCPVCPDGEASPTDQETTGVEGPK,1460,2940.4653049961403,LPIIDVAPLDVGAPDQEFGMDIGPVCFL,1089,835.43004970997,GPAGPQGPR
 Equidae,Equus,Equus Equus asinus COL1A1 prot X1,46,4073.0626901104197,LLLLLAATALLTHGQEEGQEEGQEEDIPAVTCIQDGLR,1207,3646.77324799202,TGDAGPVGPPGPPGPPGPPGPPSAGFDFSFLPQPPQEK
@@ -8,6 +8,8 @@ Felidae,Felis,Felis Felis catus COL1A1 prot X1,43,3769.9560402122297,LLLLLAATALL
 Felidae,Panthera,Panthera Panthera pardus COL1A1 prot X1,43,3769.9560402122297,LLLLLAATALLTHGQEEGQEEEDIPPVTCVQNGLR,991,960.42608652851,QGPSGSSGER
 Ursidae,Ursus,Ursus Ursus thibetanus thibetanus COL1A1 predicted protein,43,3755.9403901477694,LLLLVAATALLTHGQEEGQEEEDIPPVTCVQNGLR,1461,2926.44965493168,LPIIDVAPLDVGAPDQEFGMDVGPVCFL
 
+"Sequences that don't have a unique peptide nore a unique combination :Capreolus Capreolus capreolus COL1A1 predicted protein,Ceratotherium Ceratotherium simum simum COL1A1 prot,Cervus Cervus elaphus COL1A1 predicted protein,Diceros Diceros bicornis COL1A1 predicted protein,Vulpes Vulpes vulpes COL1A1 prot"
+
 
 "List of unique combinations for each sequence, only taking into consideration sequences that have different genus"
 Bovidae,Bison,Bison Bison bison bison COL1A1 prot,360,853.40422888465,GEGGPQGPR,414,1536.77972384078,GANGAPGIAGAPGFPGAR
@@ -15,9 +17,13 @@ Canidae,Canis,Canis Canis lupus dingo COL1A1 prot,110,3468.4578070695497,NCPGAQV
 Felidae,Felis,Felis Felis catus COL1A1 prot X1,43,3769.9560402122297,LLLLLAATALLTHGQEEGQEEEDIPPVTCVQNGLR,991,970.4468219734,QGPSGPSGER
 Felidae,Panthera,Panthera Panthera pardus COL1A1 prot X1,43,3769.9560402122297,LLLLLAATALLTHGQEEGQEEEDIPPVTCVQNGLR,991,960.42608652851,QGPSGSSGER
 
+"Sequences that don't have a unique peptide nore a unique combination :Capreolus Capreolus capreolus COL1A1 predicted protein,Ceratotherium Ceratotherium simum simum COL1A1 prot,Cervus Cervus elaphus COL1A1 predicted protein,Diceros Diceros bicornis COL1A1 predicted protein,Vulpes Vulpes vulpes COL1A1 prot"
+
 
 "List of unique combinations for each sequence, only taking into consideration sequences that have different family"
 Canidae,Canis,Canis Canis lupus dingo COL1A1 prot,110,3468.4578070695497,NCPGAQVPPGECCPVCPDGEASPTDQETTGVEGPK,1460,2940.4653049961403,LPIIDVAPLDVGAPDQEFGMDIGPVCFL
 Cervidae,Capreolus,Capreolus Capreolus capreolus COL1A1 predicted protein,360,867.41987894911,GEAGPQGPR,1463,2942.4775837572797,LPIIDVAPLDVGAPDQEFGFDVGPVCFL
 Cervidae,Cervus,Cervus Cervus elaphus COL1A1 predicted protein,360,867.41987894911,GEAGPQGPR,1463,2942.4775837572797,LPIIDVAPLDVGAPDQEFGFDVGPVCFL
 Canidae,Vulpes,Vulpes Vulpes vulpes COL1A1 prot,1457,2940.4653049961403,LPIIDVAPLDVGAPDQEFGMDIGPVCFL,1059,460.20300989444,NGDR,1086,835.43004970997,GPAGPQGPR
+
+Sequences that don't have a unique peptide nore a unique combination :
