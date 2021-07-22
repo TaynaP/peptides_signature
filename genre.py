@@ -148,7 +148,7 @@ def unique_pep_genre(dico_pep_genre):
     return unique_pep_genre_list
 
 
-def pretty_print_unique_peptide_genus(liste, output_dir):
+def pretty_print_unique_peptide_genus(liste, listAllGenus, output_dir):
     """Permet le formatage du fichier txt seulement pour les peptides uniques pour chaque genre
 
     Args:
@@ -167,14 +167,26 @@ def pretty_print_unique_peptide_genus(liste, output_dir):
         for peptide in liste:
             rowToInsert = [peptide.get_family(), peptide.get_genus(), peptide.get_prot_name(), peptide.get_position(), peptide.get_mass(), peptide.get_seq()]
             writer_genus.writerow(rowToInsert)
+        writer_genus.writerow("")
+        noUnique = []
+        for genus in listAllGenus:
+            tmp = False
+            for elt in liste :
+                if genus == elt.get_genus():
+                    tmp = True
+            if not tmp:
+                noUnique.append(genus)
+        strNoUnique = ",".join(noUnique)
+        writer_genus.writerow(["Genera that don't have a unique peptide :" + strNoUnique])
 
 
 def mainGenre(dict_p, output_dir, peptidesToProtein):
     dict_g = where_pep_present_genre(dict_p)
     uniquePepGenre = unique_pep_genre(dict_g)
+    AllGenus = getAllGenus(peptidesToProtein)
 
     # Création du fichier contenant les peptides uniques pour le genre
-    pretty_print_unique_peptide_genus(uniquePepGenre, output_dir)
+    pretty_print_unique_peptide_genus(uniquePepGenre, AllGenus, output_dir)
 
     # Liste des séquences n'ayant pas de peptides uniques pour un genre
     seqWithoutUniqueGenre = combinaisons.getSequencesWithoutUnique(peptidesToProtein, uniquePepGenre)
