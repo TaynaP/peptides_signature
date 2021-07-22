@@ -246,6 +246,7 @@ def createFile(output_dir, combinations, combsGenus, combsFamily, dicoNameSeq, p
         writer_combi.writerow(["List of unique combinations (for sequences that don't have unique peptides) :"])
         writer_combi.writerow(["Family", "Genus", "Protein Name", "Position", "Peptide mass", "Sequence"])
         theName = ""
+        nocombiName = []
         for seq, peptides in combinations.items():
             if peptides:
                 for name, nb in dicoNameSeq.items():
@@ -274,6 +275,7 @@ def createFile(output_dir, combinations, combsGenus, combsFamily, dicoNameSeq, p
         writer_combi.writerow("")
         writer_combi.writerow(["List of unique combinations for each sequence, only taking into consideration sequences that have different genus"])
         theName = ''
+        nocombiNameG = []
         for seqG, peptidesG in combsGenus.items():
             if peptidesG:
                 for name, nb in dicoNameSeq.items():
@@ -301,6 +303,7 @@ def createFile(output_dir, combinations, combsGenus, combsFamily, dicoNameSeq, p
         writer_combi.writerow("")
         writer_combi.writerow(["List of unique combinations for each sequence, only taking into consideration sequences that have different family"])
         theName = ''
+        nocombiNameF = []
         for seqF, peptidesF in combsFamily.items():
             if peptidesF:
                 for name, nb in dicoNameSeq.items():
