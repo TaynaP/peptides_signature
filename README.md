@@ -69,6 +69,8 @@ Syntaxe :
 
 Famille_Genre_Nom_de_protéine,Numéro_peptide,Enzyme,Position_de_clivage,Taille_peptide,Masse_peptide,pI,Sequence_peptide
 
+Si un peptide contient dans sa séquence un caractère qui ne correspond pas à un acide aminé, il ne sera pas pris en compte dans le traitement.
+
 #### Pour obtenir ce fichier csv en utilisant RPG :
 
 Il faut en entrée RPG un fichier fasta avec une en-tête pour chaque séquence rédigée de cette manière :
