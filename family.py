@@ -161,7 +161,7 @@ def unique_pep_family(dico_pep_family):
     return sorted(unique_pep_family_list, key=lambda pep: pep.get_family())
 
 
-def pretty_print_unique_peptide_family(liste, output_dir):
+def pretty_print_unique_peptide_family(liste, listAllFamily, output_dir):
     """Permet le formatage du fichier txt seulement pour les peptides uniques pour chaque famille
 
     Args:
@@ -176,18 +176,30 @@ def pretty_print_unique_peptide_family(liste, output_dir):
         os.makedirs(output_dir)
     with open(output_dir + 'unique_pep_family.csv', 'w', newline='') as results:
         writer_family = csv.writer(results)
-        writer_family.writerow(["Family", "Genus", "Name of Prot", "Position", "Peptide mass", "Peptide seq"])
+        writer_family.writerow(["Family", "Genus", "Protein Name", "Position", "Peptide mass", "Peptide seq"])
         for peptide in liste:
             rowToInsert = [peptide.get_family(), peptide.get_genus(), peptide.get_prot_name(), peptide.get_position(), peptide.get_mass(), peptide.get_seq()]
             writer_family.writerow(rowToInsert)
+        writer_family.writerow("")
+        noUnique = []
+        for family in listAllFamily:
+            tmp = False
+            for elt in liste :
+                if family == elt.get_family():
+                    tmp = True
+            if not tmp:
+                noUnique.append(family)
+        strNoUnique = ",".join(noUnique)
+        writer_family.writerow(["Families that don't have a unique peptide :" + strNoUnique])
 
 
 def mainFamily(dict_p, output_dir, peptidesToProtein):
     dict_f = where_pep_present_family(dict_p)
     uniquePepFamily = unique_pep_family(dict_f)
+    AllFamilies = getAllFamilies(peptidesToProtein)
 
     # Création du fichier contenant les peptides uniques pour chaque famille
-    pretty_print_unique_peptide_family(uniquePepFamily, output_dir)
+    pretty_print_unique_peptide_family(uniquePepFamily, AllFamilies, output_dir)
 
     # On cherche et renvoie les familles sans peptides uniques
     seqWithoutUniqueFamily = combinaisons.getSequencesWithoutUnique(peptidesToProtein, uniquePepFamily)
