@@ -161,7 +161,7 @@ def pretty_print_unique_peptide(liste, listeAllSeqNames, output_dir):
     """
     with open(output_dir + 'uniquePeptides.csv', 'w', newline='') as results:
         writer_unique = csv.writer(results)
-        writer_unique.writerow(["Family", "Genus", "Name of prot", "Position", "Peptide mass", "Peptide seq"])
+        writer_unique.writerow(["Family", "Genus", "Name of protein", "Position", "Peptide mass", "Peptide Sequence"])
         for peptide in liste:
             rowToInsert = [peptide.get_family(), peptide.get_genus(), peptide.get_prot_name(), peptide.get_position(), peptide.get_mass(), peptide.get_seq()]
             writer_unique.writerow(rowToInsert)
@@ -175,5 +175,5 @@ def pretty_print_unique_peptide(liste, listeAllSeqNames, output_dir):
             if not tmp:
                 noUnique.append(nameProt)
         strNoUnique = ",".join(noUnique)
-        writer_unique.writerow(["Les séquences suivantes n'ont pas de peptide unique : " + strNoUnique])
+        writer_unique.writerow(["Sequences that don't have a unique peptide : " + strNoUnique])
 
