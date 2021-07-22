@@ -2,6 +2,9 @@ from peptide_v2 import Peptides
 import itertools
 import csv
 import os
+from molmass import *
+
+acides_amines = ['G','P','A','V','L','I','M','C','F','Y','W','H','K','R','Q','N','E','D','S','T']
 
 def parse_csv(file, threshold=1):
     """Lit le fichier multifasta de RPG et crée une liste d'objet Peptides avec tout les peptides issus de la digestion
@@ -26,15 +29,23 @@ def parse_csv(file, threshold=1):
     next(myReader)
     for row in myReader:
         if int(row[4]) >= threshold:
-            id = row[0].split('_')
-            family = id[0]
-            genus = id[1]
-            prot_name = ' '.join(id[2:])
-            if prot_name != current_prot_name :
-                nb_prot += 1
-                current_prot_name = prot_name
-            nb_peptide = int(row[1]) + 1
-            list_pep.append(Peptides(row[7], int(row[1]) + 1, prot_name, nb_prot, genus, family, row[3], row[5]))
+            tmp = True
+            seq = row[7]
+            for elt in seq:
+                if elt not in acides_amines:
+                    tmp = False
+            if tmp :
+                id = row[0].split('_')
+                family = id[0]
+                genus = id[1]
+                prot_name = ' '.join(id[2:])
+                if prot_name != current_prot_name :
+                    nb_prot += 1
+                    current_prot_name = prot_name
+                nb_peptide = int(row[1]) + 1
+                f = Formula('peptide({})'.format(seq))
+                mass = f.isotope.mass
+                list_pep.append(Peptides(seq, int(row[1]) + 1, prot_name, nb_prot, genus, family, row[3], mass))
     return list_pep
 
 

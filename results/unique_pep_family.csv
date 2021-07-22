@@ -1,149 +1,146 @@
 Family,Genus,Name of Prot,Position,Peptide mass,Peptide seq
-Bovidae,Bison,Bison bison bison COL1A1 prot,360,853.88998,GEGGPQGPR
-Bovidae,Bison,Bison bison bison COL1A1 prot,1463,2916.33818,LPIIDVAPLDVGAPDQEFGFDVGPACFL
-Bovidae,Bos,Bos taurus COL1A1 prot,360,853.88998,GEGGPQGPR
-Bovidae,Bos,Bos taurus COL1A1 prot,446,4868.61568,GANVSILQVSEPPPVPAFHLPLPSSPGLNLFGLPQGAPGIAGAPGFPGAR
-Bovidae,Bos,Bos taurus COL1A1 prot,1495,2916.33818,LPIIDVAPLDVGAPDQEFGFDVGPACFL
-Bovidae,Capra,Capra ibex COL1A1 predicted protein,114,3037.24588,VPTDECCPVCPEGQESTTDQETTGVEGPK
-Bovidae,Capra,Capra ibex COL1A1 predicted protein,1032,614.65608,DGAPGAK
-Bovidae,Capra,Capra ibex COL1A1 predicted protein,1269,916.08038,MCHPDWK
-Bovidae,Capra,Capra ibex COL1A1 predicted protein,1463,2948.38028,LPIIDVAPLDVGAPDQEFGFDIGSVCFL
-Canidae,Vulpes,Vulpes lagopus COL1A1 predicted protein,1089,851.96078,GPAGPQGLR
-Canidae,Vulpes,Vulpes vulpes COL1A1 prot,107,2978.19408,NCPGAQVPXAPSATPGSPSPTDQETTGVEGPK
-Cervidae,Alces,Alces alces COL1A1 predicted protein,917,743.77458,GETGPAGR
-Cervidae,Alces,Alces alces COL1A1 predicted protein,933,1416.55358,AGEVGPPGPPGPAGEK
-Cervidae,Rangifer,Rangifer tarandus COL1A1 predicted protein,1207,3558.90858,TGDAGPAGPPGPPGPPGPPGPPSGGYDLGFLPQPPQEK
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,8,1014.20738,MFSFVDIR
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,42,3619.10438,LLLLLAATALLTHGQEEGQDEDIPSVTCVQNGLR
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,75,2189.48828,ICVCDNGNVLCDDVMCDETK
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,81,617.67758,DCPGAR
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,105,2244.49408,VPEGECCPVCPNSGQXGSGLEGPK
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,421,1274.39888,GPAGPQGPSGAPGPK
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,459,1829.98418,GEPGPVGIQGPPGPAGEEGK
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,565,1936.11728,TGPPGPAXQDGRPGPPGPPGAR
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,603,1134.30058,GVPGPPGAVGAAGK
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,754,443.45998,DGPR
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,853,2263.49478,GDAGPPGPAGPTGAPGPIGNVGAPGPK
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,949,2059.18248,GSPGADGPAGAPGTPGPQGIGGQR
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,1005,1724.89368,GPPGPAGPPGLAGPPGESGR
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,1075,1518.64938,GETGPAGPAGPAGPAGVR
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,1099,316.40068,GLK
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,1199,3649.03338,TGDAGPVGPPGPPGPPGPPGPPSGAFDFSFLPQPPQEK
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,1415,2077.20938,FTYSVTEDGCTSHTGTWGK
-Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,1455,2958.41878,LPIIDVAPLDVGAPDQEFGFDIGPVCFL
-Equidae,Equus,Equus asinus COL1A1 prot X1,46,4075.55708,LLLLLAATALLTHGQEEGQEEGQEEDIPAVTCIQDGLR
-Equidae,Equus,Equus asinus COL1A1 prot X1,54,502.61398,AVWK
-Equidae,Equus,Equus asinus COL1A1 prot X1,79,2171.45508,VCICDNGNVLCDDVICEDTK
-Equidae,Equus,Equus asinus COL1A1 prot X1,88,872.00688,NCPGASVPK
-Equidae,Equus,Equus asinus COL1A1 prot X1,114,2691.89328,DECCPVCPEGQVSPTDDQTTGVEGPK
-Equidae,Equus,Equus asinus COL1A1 prot X1,861,2232.48078,GDAGPPGPAGPAGPPGPIGSVGAPGPK
-Equidae,Equus,Equus asinus COL1A1 prot X1,1083,1530.70368,GEAGPAGPAGPIGPVGAR
-Equidae,Equus,Equus asinus COL1A1 prot X1,1213,627.61448,SHDGGR
-Equidae,Equus,Equus caballus COL1A1 prot,46,4075.55708,LLLLLAATALLTHGQEEGQEEGQEEDIPAVTCIQDGLR
-Equidae,Equus,Equus caballus COL1A1 prot,54,502.61398,AVWK
-Equidae,Equus,Equus caballus COL1A1 prot,79,2171.45508,VCICDNGNVLCDDVICEDTK
-Equidae,Equus,Equus caballus COL1A1 prot,88,872.00688,NCPGASVPK
-Equidae,Equus,Equus caballus COL1A1 prot,114,2691.89328,DECCPVCPEGQVSPTDDQTTGVEGPK
-Equidae,Equus,Equus caballus COL1A1 prot,861,2232.48078,GDAGPPGPAGPAGPPGPIGSVGAPGPK
-Equidae,Equus,Equus caballus COL1A1 prot,1083,1530.70368,GEAGPAGPAGPIGPVGAR
-Equidae,Equus,Equus caballus COL1A1 prot,1213,627.61448,SHDGGR
-Felidae,Felis,Felis catus COL1A1 prot X1,43,3772.28528,LLLLLAATALLTHGQEEGQEEEDIPPVTCVQNGLR
-Felidae,Felis,Felis catus COL1A1 prot X1,111,3421.74798,NCPGAHVPPGECCPVCPDGEASPTGQETTGVEGPK
-Felidae,Felis,Felis catus COL1A1 prot X1,1461,2896.34778,LPIIDVAPLDVGAPDQEFGIDIGPACFL
-Felidae,Panthera,Panthera pardus COL1A1 prot X1,43,3772.28528,LLLLLAATALLTHGQEEGQEEEDIPPVTCVQNGLR
-Felidae,Panthera,Panthera pardus COL1A1 prot X1,111,3421.74798,NCPGAHVPPGECCPVCPDGEASPTGQETTGVEGPK
-Felidae,Panthera,Panthera pardus COL1A1 prot X1,1461,2896.34778,LPIIDVAPLDVGAPDQEFGIDIGPACFL
-Hominidae,Homo,Homo sapiens COL1A1 prot X1,46,4056.60038,LLLLLAATALLTHGQEEGQVEGQDEDIPPITCVQNGLR
-Hominidae,Homo,Homo sapiens COL1A1 prot X1,67,851.00328,ICVCDNGK
-Hominidae,Homo,Homo sapiens COL1A1 prot X1,79,1352.53738,VLCDDVICDETK
-Hominidae,Homo,Homo sapiens COL1A1 prot X1,114,3519.75728,NCPGAEVPEGECCPVCPDGSESPTDQETTGVEGPK
-Hominidae,Homo,Homo sapiens COL1A1 prot X1,331,1828.96198,GRPGAPGPAGNPGADGQPGAK
-Hominidae,Homo,Homo sapiens COL1A1 prot X1,364,1286.40988,GPSGPQGPGGPPGPK
-Hominidae,Homo,Homo sapiens COL1A1 prot X1,402,1815.95738,GEPGPVGVQGPPGPAGEEGK
-Hominidae,Homo,Homo sapiens COL1A1 prot X1,796,2233.46848,GDAGPPGPAGPAGPPGPIGNVGAPGAK
-Hominidae,Homo,Homo sapiens COL1A1 prot X1,1290,3807.16478,HVWFGESMTDGFQFEYGGQGSDPADVAIQLTFLR
-Hominidae,Homo,Homo sapiens COL1A1 prot X1,1358,2017.20018,FTYSVTVDGCTSHTGAWGK
-Hyaenidae,Crocuta,Crocuta crocuta COL1A1 predicted protein,110,3393.69418,NCPGAHVPPGECCPVCPDGEASPTGQETTGAEGPK
-Hyaenidae,Crocuta,Crocuta crocuta COL1A1 predicted protein,906,330.38728,GVR
-Hyaenidae,Crocuta,Crocuta crocuta COL1A1 predicted protein,990,2252.46868,GFPGLPGPSVNTTAVAPSGPSGER
-Hyaenidae,Crocuta,Crocuta crocuta COL1A1 predicted protein,1101,917.88758,GEAGEQGDR
-Hyaenidae,Crocuta,Crocuta crocuta COL1A1 predicted protein,1352,3763.06578,HVWYGESMTDGSQFEYGGQGSDPADVAIQLTFLR
-Hyaenidae,Crocuta,Crocuta crocuta COL1A1 predicted protein,1460,2930.36498,LPIIDVAPLDIGAPDQEFGFDVGPACFL
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,46,4000.53638,LLLLLAATALLTHGQEEGQVEGQSEDIPPVTCVQNGVR
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,49,332.40018,SVK
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,52,372.42458,TPR
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,57,542.63598,TVPAR
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,70,1102.27078,CSPASAALSAPK
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,72,275.30788,TR
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,87,1624.68138,EHPTDQETTGVEGPK
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,192,3021.31358,GLPGPPGSPGPQGFQGPPGEPGEPGASGPMGPR
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,200,679.77398,GPPGAPGK
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,834,2233.46848,GDAGPAGPAGPAGPPGPIGNVGAPGPK
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,854,1453.57728,GSPGPPGATGFPGAAGR
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1179,3531.94428,TGDAGPVGPPGPPGPPGPPGPPSGGFDFIMPQPPQEK
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1185,531.52588,AGDGGR
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1217,1159.30468,SLSQQIENIK
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1281,2375.71178,VFCDMDTGATCVYPTQPSIAQK
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1327,3838.17588,HVWFGESMTDGFQFEYGSEGSDPADVAIQLTFLR
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1395,2111.31618,FTYTVLHDGCTSHTGTWGK
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1399,459.58648,TVIK
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1401,309.36538,YK
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1456,5269.14868,LPIIDVAPLDIGAPDQEFGFDVWPCLLPVNALLPDLAPSHPPPPPLHPR
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1458,288.30658,NR
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1469,1130.22008,QTTQTETPPK
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1475,696.76418,RPPDGR
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1493,2102.37698,QFHTDFGDLFLPLHSSLK
-Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1498,641.76488,LSFYL
-Mustelidae,Lutra,Lutra lutra COL1A1 predicted protein,110,3413.72238,SCPGAQVPPGECCPVCPDGEASPTDQETAGVEGPK
-Mustelidae,Mustela,Mustela putorius furo COL1A1 prot X1,110,3440.74798,NCPGAQVPPGECCPVCPDGEASPTDQETAGVEGPK
-Odobenidae,Odobenus,Odobenus rosmarus divergens COL1A1 prot,21,1415.78238,LLLFLAATALLTR
-Odobenidae,Odobenus,Odobenus rosmarus divergens COL1A1 prot,42,2298.46628,GQEEGQEEDIPPVTCVQNGLR
-Odobenidae,Odobenus,Odobenus rosmarus divergens COL1A1 prot,357,871.90528,GETGPQGAR
-Odobenidae,Odobenus,Odobenus rosmarus divergens COL1A1 prot,438,1114.13678,GNSGEPGTPGNK
-Odobenidae,Odobenus,Odobenus rosmarus divergens COL1A1 prot,858,2279.49418,GDAGPPGPAGPTGPPGSIGNVGAPGPK
-Rhinocerotidae,Ceratotherium,Ceratotherium simum simum COL1A1 prot,42,3631.15868,LLLLLAATALLTHGQEEGQEEDIPAVTCIQNGLR
-Rhinocerotidae,Ceratotherium,Ceratotherium simum simum COL1A1 prot,50,975.07158,YHDGAVWK
-Rhinocerotidae,Ceratotherium,Ceratotherium simum simum COL1A1 prot,75,2171.45518,VCVCDNGNVLCDEVICEDTK
-Rhinocerotidae,Ceratotherium,Ceratotherium simum simum COL1A1 prot,110,3528.85438,NCPGASVPPDECCPVCPEGQVSPTDEQTTGVEGPK
-Rhinocerotidae,Ceratotherium,Ceratotherium simum simum COL1A1 prot,930,2156.29638,GETGPAGRPGEAGPPGPPGPSGEK
-Rhinocerotidae,Ceratotherium,Ceratotherium simum simum COL1A1 prot,1204,3663.06028,TGEAGPVGPPGPPGPPGPPGPPSAGFDFSFLPQPPQEK
-Rhinocerotidae,Ceratotherium,Ceratotherium simum simum COL1A1 prot,1312,796.92128,TWYISK
-Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,27,1989.34548,LLLLLAAAALLTHGQEEGR
-Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,42,1657.85898,EEDIPAVTCIQNGLR
-Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,50,975.07158,YHDGAVWK
-Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,75,2171.45518,VCVCDNGNVLCDEVICEDTK
-Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,110,3528.85438,NCPGASVPPDECCPVCPEGQVSPTDEQTTGVEGPK
-Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,930,2156.29638,GETGPAGRPGEAGPPGPPGPSGEK
-Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,1312,782.89448,TWYVSK
-Rhinocerotidae,Diceros,Diceros bicornis COL1A1 predicted protein,42,3631.15868,LLLLLAATALLTHGQEEGQEEDIPAVTCIQNGLR
-Rhinocerotidae,Diceros,Diceros bicornis COL1A1 predicted protein,50,975.07158,YHDGAVWK
-Rhinocerotidae,Diceros,Diceros bicornis COL1A1 predicted protein,75,2171.45518,VCVCDNGNVLCDEVICEDTK
-Rhinocerotidae,Diceros,Diceros bicornis COL1A1 predicted protein,110,3528.85438,NCPGASVPPDECCPVCPEGQVSPTDEQTTGVEGPK
-Rhinocerotidae,Diceros,Diceros bicornis COL1A1 predicted protein,930,2156.29638,GETGPAGRPGEAGPPGPPGPSGEK
-Rhinocerotidae,Diceros,Diceros bicornis COL1A1 predicted protein,1204,3663.06028,TGEAGPVGPPGPPGPPGPPGPPSAGFDFSFLPQPPQEK
-Rhinocerotidae,Diceros,Diceros bicornis COL1A1 predicted protein,1312,796.92128,TWYISK
-Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,46,3988.48178,LLLLLAATALLTHGQTEGEVNDQEGDIPGVDCIQNGLR
-Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,54,868.94748,AHNDVWK
-Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,80,2819.26608,PTPCQICLCHNGEVMCDEVVCPNDAK
-Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,114,3354.69778,CPGGQIPPGECCPVCPDDAASPTDQDLTGVEGPK
-Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,170,3747.10958,DGIPGNPGLPGPPGPPGPPGPPGLGGNFASQMSYGYDEK
-Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,1207,3653.03968,TGDAGPVGPPGPPGPPGPPGPPSGGFDFSFMPQPPQEK
-Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,1212,474.47398,AGDGR
-Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,1308,2446.79068,VFCNMETGETCVYPTQPTVAQK
-Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,1317,1175.26868,NWYISNNHK
-Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,1354,3780.13918,HVWFGESMTGGFQFEYGSEGSDPADVAIQLTFLR
-Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,1422,2095.27038,FTYSTIYDGCTSHTGAWGK
-Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,1462,2914.38098,LPIIDVAPLDIGAPDQEFGMDIGPACFV
-Suidae,Sus,Sus scrofa COL1A1 prot X1,49,4399.89668,LLLLLAATALLTHGQEEGQEEGQQGQEEDIPPVTCVQNGLR
-Suidae,Sus,Sus scrofa COL1A1 prot X1,82,2708.14488,PVPCQICVCDNGNVLCDDVICDEIK
-Suidae,Sus,Sus scrofa COL1A1 prot X1,88,646.71908,NCPSAR
-Suidae,Sus,Sus scrofa COL1A1 prot X1,117,2916.19638,VPAGECCPVCPEGEVSPTDQETTGVEGPK
-Suidae,Sus,Sus scrofa COL1A1 prot X1,134,723.78678,GPSGPPGR
-Suidae,Sus,Sus scrofa COL1A1 prot X1,324,1089.22228,GRPGPPGPAGAR
-Suidae,Sus,Sus scrofa COL1A1 prot X1,1064,2107.31038,GESGPAGPPGAPGAPGAPGPVGPAGK
-Suidae,Sus,Sus scrofa COL1A1 prot X1,1312,2458.80168,VFCNMETGETCVYPTQPSVPQK
-Suidae,Sus,Sus scrofa COL1A1 prot X1,1426,2093.29788,FTYSVIYDGCTSHTGAWGK
-Suidae,Sus,Sus scrofa COL1A1 prot X1,1466,2954.42788,LPIIDVAPLDVGAPDQEFGIDLSPVCFL
-Ursidae,Ursus,Ursus arctos horribilis COL1A1 prot X1,43,3758.25848,LLLLVAATALLTHGQEEGQEEEDIPPVTCVQNGLR
-Ursidae,Ursus,Ursus arctos horribilis COL1A1 prot X1,1461,2942.43478,LPIIDVAPLDIGAPDQEFGMDVGPVCFL
-Ursidae,Ursus,Ursus thibetanus thibetanus COL1A1 predicted protein,43,3758.25848,LLLLVAATALLTHGQEEGQEEEDIPPVTCVQNGLR
+Bovidae,Bison,Bison bison bison COL1A1 prot,360,853.40422888465,GEGGPQGPR
+Bovidae,Bison,Bison bison bison COL1A1 prot,1463,2914.4462836283597,LPIIDVAPLDVGAPDQEFGFDVGPACFL
+Bovidae,Bos,Bos taurus COL1A1 prot,360,853.40422888465,GEGGPQGPR
+Bovidae,Bos,Bos taurus COL1A1 prot,446,4865.60209430341,GANVSILQVSEPPPVPAFHLPLPSSPGLNLFGLPQGAPGIAGAPGFPGAR
+Bovidae,Bos,Bos taurus COL1A1 prot,1495,2914.4462836283597,LPIIDVAPLDVGAPDQEFGFDVGPACFL
+Bovidae,Capra,Capra ibex COL1A1 predicted protein,114,3035.26819813522,VPTDECCPVCPEGQESTTDQETTGVEGPK
+Bovidae,Capra,Capra ibex COL1A1 predicted protein,1032,614.3023895848,DGAPGAK
+Bovidae,Capra,Capra ibex COL1A1 predicted protein,1269,915.37312943034,MCHPDWK
+Bovidae,Capra,Capra ibex COL1A1 predicted protein,1463,2946.4724983768497,LPIIDVAPLDVGAPDQEFGFDIGSVCFL
+Canidae,Vulpes,Vulpes lagopus COL1A1 predicted protein,1089,851.46134983889,GPAGPQGLR
+Cervidae,Alces,Alces alces COL1A1 predicted protein,917,743.3562160628401,GETGPAGR
+Cervidae,Alces,Alces alces COL1A1 predicted protein,933,1415.70449321259,AGEVGPPGPPGPAGEK
+Cervidae,Rangifer,Rangifer tarandus COL1A1 predicted protein,1207,3556.7262977986397,TGDAGPAGPPGPPGPPGPPGPPSGGYDLGFLPQPPQEK
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,8,1013.5004379462999,MFSFVDIR
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,42,3616.87706161413,LLLLLAATALLTHGQEEGQDEDIPSVTCVQNGLR
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,75,2187.8614845837,ICVCDNGNVLCDDVMCDETK
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,81,617.25914504737,DCPGAR
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,421,1273.64149903158,GPAGPQGPSGAPGPK
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,459,1828.8955414419402,GEPGPVGIQGPPGPAGEEGK
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,603,1133.61930703509,GVPGPPGAVGAAGK
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,754,443.21284630267,DGPR
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,853,2262.1392939503603,GDAGPPGPAGPTGAPGPIGNVGAPGPK
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,949,2057.98787868619,GSPGADGPAGAPGTPGPQGIGGQR
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,1005,1723.86418174248,GPPGPAGPPGLAGPPGESGR
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,1075,1517.7586540432599,GETGPAGPAGPAGPAGVR
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,1099,316.21105539843995,GLK
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,1199,3646.77324799202,TGDAGPVGPPGPPGPPGPPGPPSGAFDFSFLPQPPQEK
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,1415,2075.8894702601997,FTYSVTEDGCTSHTGTWGK
+Elephantidae,Loxondonta,Loxodonta africana COL1A1 prot,1455,2956.49323382174,LPIIDVAPLDVGAPDQEFGFDIGPVCFL
+Equidae,Equus,Equus asinus COL1A1 prot X1,46,4073.0626901104197,LLLLLAATALLTHGQEEGQEEGQEEDIPAVTCIQDGLR
+Equidae,Equus,Equus asinus COL1A1 prot X1,54,502.29036834916997,AVWK
+Equidae,Equus,Equus asinus COL1A1 prot X1,79,2169.90506347376,VCICDNGNVLCDDVICEDTK
+Equidae,Equus,Equus asinus COL1A1 prot X1,88,871.422187624,NCPGASVPK
+Equidae,Equus,Equus asinus COL1A1 prot X1,114,2690.11459804365,DECCPVCPEGQVSPTDDQTTGVEGPK
+Equidae,Equus,Equus asinus COL1A1 prot X1,861,2231.13348029413,GDAGPPGPAGPAGPPGPIGSVGAPGPK
+Equidae,Equus,Equus asinus COL1A1 prot X1,1083,1529.79503955261,GEAGPAGPAGPIGPVGAR
+Equidae,Equus,Equus asinus COL1A1 prot X1,1213,627.27248643694,SHDGGR
+Equidae,Equus,Equus caballus COL1A1 prot,46,4073.0626901104197,LLLLLAATALLTHGQEEGQEEGQEEDIPAVTCIQDGLR
+Equidae,Equus,Equus caballus COL1A1 prot,54,502.29036834916997,AVWK
+Equidae,Equus,Equus caballus COL1A1 prot,79,2169.90506347376,VCICDNGNVLCDDVICEDTK
+Equidae,Equus,Equus caballus COL1A1 prot,88,871.422187624,NCPGASVPK
+Equidae,Equus,Equus caballus COL1A1 prot,114,2690.11459804365,DECCPVCPEGQVSPTDDQTTGVEGPK
+Equidae,Equus,Equus caballus COL1A1 prot,861,2231.13348029413,GDAGPPGPAGPAGPPGPIGSVGAPGPK
+Equidae,Equus,Equus caballus COL1A1 prot,1083,1529.79503955261,GEAGPAGPAGPIGPVGAR
+Equidae,Equus,Equus caballus COL1A1 prot,1213,627.27248643694,SHDGGR
+Felidae,Felis,Felis catus COL1A1 prot X1,43,3769.9560402122297,LLLLLAATALLTHGQEEGQEEEDIPPVTCVQNGLR
+Felidae,Felis,Felis catus COL1A1 prot X1,111,3419.45266211858,NCPGAHVPPGECCPVCPDGEASPTGQETTGVEGPK
+Felidae,Felis,Felis catus COL1A1 prot X1,1461,2894.4775837572797,LPIIDVAPLDVGAPDQEFGIDIGPACFL
+Felidae,Panthera,Panthera pardus COL1A1 prot X1,43,3769.9560402122297,LLLLLAATALLTHGQEEGQEEEDIPPVTCVQNGLR
+Felidae,Panthera,Panthera pardus COL1A1 prot X1,111,3419.45266211858,NCPGAHVPPGECCPVCPDGEASPTGQETTGVEGPK
+Felidae,Panthera,Panthera pardus COL1A1 prot X1,1461,2894.4775837572797,LPIIDVAPLDVGAPDQEFGIDIGPACFL
+Hominidae,Homo,Homo sapiens COL1A1 prot X1,46,4054.10449535283,LLLLLAATALLTHGQEEGQVEGQDEDIPPITCVQNGLR
+Hominidae,Homo,Homo sapiens COL1A1 prot X1,67,850.36770969728,ICVCDNGK
+Hominidae,Homo,Homo sapiens COL1A1 prot X1,79,1351.5999540343198,VLCDDVICDETK
+Hominidae,Homo,Homo sapiens COL1A1 prot X1,114,3517.4265665111698,NCPGAEVPEGECCPVCPDGSESPTDQETTGVEGPK
+Hominidae,Homo,Homo sapiens COL1A1 prot X1,331,1827.89760712826,GRPGAPGPAGNPGADGQPGAK
+Hominidae,Homo,Homo sapiens COL1A1 prot X1,364,1285.64149903158,GPSGPQGPGGPPGPK
+Hominidae,Homo,Homo sapiens COL1A1 prot X1,402,1814.87989137748,GEPGPVGVQGPPGPAGEEGK
+Hominidae,Homo,Homo sapiens COL1A1 prot X1,796,2232.12872926633,GDAGPPGPAGPAGPPGPIGNVGAPGAK
+Hominidae,Homo,Homo sapiens COL1A1 prot X1,1290,3804.75186109845,HVWFGESMTDGFQFEYGGQGSDPADVAIQLTFLR
+Hominidae,Homo,Homo sapiens COL1A1 prot X1,1358,2015.90472640149,FTYSVTVDGCTSHTGAWGK
+Hyaenidae,Crocuta,Crocuta crocuta COL1A1 predicted protein,110,3391.4213619896595,NCPGAHVPPGECCPVCPDGEASPTGQETTGAEGPK
+Hyaenidae,Crocuta,Crocuta crocuta COL1A1 predicted protein,906,330.20155334284,GVR
+Hyaenidae,Crocuta,Crocuta crocuta COL1A1 predicted protein,990,2251.12330953327,GFPGLPGPSVNTTAVAPSGPSGER
+Hyaenidae,Crocuta,Crocuta crocuta COL1A1 predicted protein,1101,917.38388736293,GEAGEQGDR
+Hyaenidae,Crocuta,Crocuta crocuta COL1A1 predicted protein,1352,3760.7103902086697,HVWYGESMTDGSQFEYGGQGSDPADVAIQLTFLR
+Hyaenidae,Crocuta,Crocuta crocuta COL1A1 predicted protein,1460,2928.4619336928195,LPIIDVAPLDIGAPDQEFGFDVGPACFL
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,46,3998.07828060434,LLLLLAATALLTHGQEEGQVEGQSEDIPPVTCVQNGVR
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,49,332.20597001801,SVK
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,52,372.21211802687003,TPR
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,57,542.31764572609,TVPAR
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,70,1101.54884469128,CSPASAALSAPK
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,72,275.15935417726,TR
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,87,1623.73764381628,EHPTDQETTGVEGPK
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,192,3019.42465374622,GLPGPPGSPGPQGFQGPPGEPGEPGASGPMGPR
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,200,679.36532419527,GPPGAPGK
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,834,2232.12872926633,GDAGPAGPAGPAGPPGPIGNVGAPGPK
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,854,1452.7109755740798,GSPGPPGATGFPGAAGR
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1179,3529.69764069724,TGDAGPVGPPGPPGPPGPPGPPSGGFDFIMPQPPQEK
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1185,531.2401236795899,AGDGGR
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1217,1158.62445198606,SLSQQIENIK
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1281,2374.0643408239002,VFCDMDTGATCVYPTQPSIAQK
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1327,3835.7464413653897,HVWFGESMTDGFQFEYGSEGSDPADVAIQLTFLR
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1395,2109.95782460373,FTYTVLHDGCTSHTGTWGK
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1399,459.30568406099997,TVIK
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1401,309.16885623286,YK
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1456,5265.77292485853,LPIIDVAPLDIGAPDQEFGFDVWPCLLPVNALLPDLAPSHPPPPPLHPR
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1458,288.15460314946,NR
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1469,1129.56151737559,QTTQTETPPK
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1475,696.36672117633,RPPDGR
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1493,2101.06327547583,QFHTDFGDLFLPLHSSLK
+Leporidae,Oryctolagus,Oryctolagus cuniculus COL1A1 prot,1498,641.34246349352,LSFYL
+Mustelidae,Lutra,Lutra lutra COL1A1 predicted protein,110,3411.4363433488597,SCPGAQVPPGECCPVCPDGEASPTDQETAGVEGPK
+Mustelidae,Mustela,Mustela putorius furo COL1A1 prot X1,110,3438.44724238552,NCPGAQVPPGECCPVCPDGEASPTDQETAGVEGPK
+Odobenidae,Odobenus,Odobenus rosmarus divergens COL1A1 prot,21,1414.8911717871401,LLLFLAATALLTR
+Odobenidae,Odobenus,Odobenus rosmarus divergens COL1A1 prot,42,2297.05938912149,GQEEGQEEDIPPVTCVQNGLR
+Odobenidae,Odobenus,Odobenus rosmarus divergens COL1A1 prot,357,871.41479356868,GETGPQGAR
+Odobenidae,Odobenus,Odobenus rosmarus divergens COL1A1 prot,438,1113.50506512661,GNSGEPGTPGNK
+Odobenidae,Odobenus,Odobenus rosmarus divergens COL1A1 prot,858,2278.13420856993,GDAGPPGPAGPTGPPGSIGNVGAPGPK
+Rhinocerotidae,Ceratotherium,Ceratotherium simum simum COL1A1 prot,42,3628.9134471234797,LLLLLAATALLTHGQEEGQEEDIPAVTCIQNGLR
+Rhinocerotidae,Ceratotherium,Ceratotherium simum simum COL1A1 prot,50,974.4610154862601,YHDGAVWK
+Rhinocerotidae,Ceratotherium,Ceratotherium simum simum COL1A1 prot,75,2169.90506347376,VCVCDNGNVLCDEVICEDTK
+Rhinocerotidae,Ceratotherium,Ceratotherium simum simum COL1A1 prot,110,3526.4996718825,NCPGASVPPDECCPVCPEGQVSPTDEQTTGVEGPK
+Rhinocerotidae,Ceratotherium,Ceratotherium simum simum COL1A1 prot,930,2155.02940914651,GETGPAGRPGEAGPPGPPGPSGEK
+Rhinocerotidae,Ceratotherium,Ceratotherium simum simum COL1A1 prot,1204,3660.78889805648,TGEAGPVGPPGPPGPPGPPGPPSAGFDFSFLPQPPQEK
+Rhinocerotidae,Ceratotherium,Ceratotherium simum simum COL1A1 prot,1312,796.41194003602,TWYISK
+Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,27,1988.14186015076,LLLLLAAAALLTHGQEEGR
+Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,42,1656.81412049093,EEDIPAVTCIQNGLR
+Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,50,974.4610154862601,YHDGAVWK
+Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,75,2169.90506347376,VCVCDNGNVLCDEVICEDTK
+Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,110,3526.4996718825,NCPGASVPPDECCPVCPEGQVSPTDEQTTGVEGPK
+Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,930,2155.02940914651,GETGPAGRPGEAGPPGPPGPSGEK
+Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,1312,782.39628997156,TWYVSK
+Rhinocerotidae,Diceros,Diceros bicornis COL1A1 predicted protein,42,3628.9134471234797,LLLLLAATALLTHGQEEGQEEDIPAVTCIQNGLR
+Rhinocerotidae,Diceros,Diceros bicornis COL1A1 predicted protein,50,974.4610154862601,YHDGAVWK
+Rhinocerotidae,Diceros,Diceros bicornis COL1A1 predicted protein,75,2169.90506347376,VCVCDNGNVLCDEVICEDTK
+Rhinocerotidae,Diceros,Diceros bicornis COL1A1 predicted protein,110,3526.4996718825,NCPGASVPPDECCPVCPEGQVSPTDEQTTGVEGPK
+Rhinocerotidae,Diceros,Diceros bicornis COL1A1 predicted protein,930,2155.02940914651,GETGPAGRPGEAGPPGPPGPSGEK
+Rhinocerotidae,Diceros,Diceros bicornis COL1A1 predicted protein,1204,3660.78889805648,TGEAGPVGPPGPPGPPGPPGPPSAGFDFSFLPQPPQEK
+Rhinocerotidae,Diceros,Diceros bicornis COL1A1 predicted protein,1312,796.41194003602,TWYISK
+Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,46,3986.04189509499,LLLLLAATALLTHGQTEGEVNDQEGDIPGVDCIQNGLR
+Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,54,868.41915067331,AHNDVWK
+Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,80,2817.17227128171,PTPCQICLCHNGEVMCDEVVCPNDAK
+Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,114,3352.4356150730596,CPGGQIPPGECCPVCPDDAASPTDQDLTGVEGPK
+Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,170,3744.75186109845,DGIPGNPGLPGPPGPPGPPGPPGLGGNFASQMSYGYDEK
+Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,1207,3650.7140190375,TGDAGPVGPPGPPGPPGPPGPPSGGFDFSFMPQPPQEK
+Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,1212,474.2186599589,AGDGR
+Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,1308,2445.10145460905,VFCNMETGETCVYPTQPTVAQK
+Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,1317,1174.55195574945,NWYISNNHK
+Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,1354,3777.7409620617896,HVWFGESMTGGFQFEYGSEGSDPADVAIQLTFLR
+Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,1422,2093.9152910855196,FTYSTIYDGCTSHTGAWGK
+Sciuridae,Marmota,Marmota marmota marmota COL1A1 prot X1,1462,2912.4340048672198,LPIIDVAPLDIGAPDQEFGMDIGPACFV
+Suidae,Sus,Sus scrofa COL1A1 prot X1,49,4397.21729325988,LLLLLAATALLTHGQEEGQEEGQQGQEEDIPPVTCVQNGLR
+Suidae,Sus,Sus scrofa COL1A1 prot X1,82,2706.18315306179,PVPCQICVCDNGNVLCDDVICDEIK
+Suidae,Sus,Sus scrofa COL1A1 prot X1,88,646.2856941484899,NCPSAR
+Suidae,Sus,Sus scrofa COL1A1 prot X1,117,2914.26707593625,VPAGECCPVCPEGEVSPTDQETTGVEGPK
+Suidae,Sus,Sus scrofa COL1A1 prot X1,134,723.3663868236999,GPSGPPGR
+Suidae,Sus,Sus scrofa COL1A1 prot X1,324,1088.58392458363,GRPGPPGPAGAR
+Suidae,Sus,Sus scrofa COL1A1 prot X1,1064,2106.0494163156,GESGPAGPPGAPGAPGAPGPVGPAGK
+Suidae,Sus,Sus scrofa COL1A1 prot X1,1312,2457.10145460905,VFCNMETGETCVYPTQPSVPQK
+Suidae,Sus,Sus scrofa COL1A1 prot X1,1426,2091.93602653041,FTYSVIYDGCTSHTGAWGK
+Suidae,Sus,Sus scrofa COL1A1 prot X1,1466,2952.51944857023,LPIIDVAPLDVGAPDQEFGIDLSPVCFL
+Ursidae,Ursus,Ursus arctos horribilis COL1A1 prot X1,43,3755.9403901477694,LLLLVAATALLTHGQEEGQEEEDIPPVTCVQNGLR
+Ursidae,Ursus,Ursus arctos horribilis COL1A1 prot X1,1461,2940.4653049961403,LPIIDVAPLDIGAPDQEFGMDVGPVCFL
+Ursidae,Ursus,Ursus thibetanus thibetanus COL1A1 predicted protein,43,3755.9403901477694,LLLLVAATALLTHGQEEGQEEEDIPPVTCVQNGLR
