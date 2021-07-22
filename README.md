@@ -41,7 +41,7 @@ $ python3 Main.py [-h] [-p PEPTIDETHRESHOLD] [-c COMBINATIONTHRESHOLD] -i peptid
 
 Obligatoires :
 - -i : le nom du fichier input contenant la liste des peptides (le fichier csv)
-- -o : le dossier (chemin) qui contiendra tous les fichiers résultats (ex : results/), le chemin doit se finir par un '/'.
+- -o : le dossier (chemin) qui contiendra tous les fichiers résultats (ex : results/)
 
 Facultatifs :
 - -h : message d'aide
@@ -68,6 +68,15 @@ C'est un fichier CSV qui doit correspondre à une digestion in silico. Il peut �
 Syntaxe :
 
 Nom_prot,No_peptide,Enzyme,Pos_clivage,Taille_pep,Masse_pep,pI,Sequence
+
+#### Pour obtenir ce fichier csv en utilisant RPG :
+
+Il faut en entrée RPG un fichier fasta avec une en-tête pour chaque séquence rédigée de cette manière :
+
+>Famille_Genre_Nom_de_protéine
+
+exemple :
+>Bovidae_Bos_Bos_taurus_COL1A1_prot
 
 ## Fichiers résultats
 
