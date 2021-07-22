@@ -1,4 +1,4 @@
-from peptide_v2 import Peptides
+from peptide import Peptides
 import itertools
 import csv
 import os
@@ -98,7 +98,7 @@ def pretty_print_all(dico, output_dir):
         TypeError: if the parameters is not a dict and a str
     """
     currentSequence = ""
-    with open(output_dir + 'liste_peptides.txt', 'w') as results:
+    with open(output_dir + 'peptide_list.txt', 'w') as results:
         peptides = list(dico.keys())
         for pep in peptides:
             if pep.get_prot_name() != currentSequence:
@@ -159,7 +159,7 @@ def pretty_print_unique_peptide(liste, listeAllSeqNames, output_dir):
     Raises:
         TypeError: if the parameters is not a list and a str
     """
-    with open(output_dir + 'uniquePeptides.csv', 'w', newline='') as results:
+    with open(output_dir + 'unique_peptides.csv', 'w', newline='') as results:
         writer_unique = csv.writer(results)
         writer_unique.writerow(["Family", "Genus", "Protein Name", "Position", "Peptide mass", "Peptide Sequence"])
         for peptide in liste:

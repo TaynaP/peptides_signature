@@ -1,5 +1,5 @@
 import itertools
-import combinaisons
+import combinations
 import os
 import csv
 
@@ -202,6 +202,6 @@ def mainFamily(dict_p, output_dir, peptidesToProtein):
     pretty_print_unique_peptide_family(uniquePepFamily, AllFamilies, output_dir)
 
     # On cherche et renvoie les familles sans peptides uniques
-    seqWithoutUniqueFamily = combinaisons.getSequencesWithoutUnique(peptidesToProtein, uniquePepFamily)
+    seqWithoutUniqueFamily = combinations.getSequencesWithoutUnique(peptidesToProtein, uniquePepFamily)
     return seqWithoutUniqueFamily
 

@@ -1,4 +1,4 @@
-Family,Genus,Name of prot,Position,Peptide mass,Peptide seq
+Family,Genus,Protein Name,Position,Peptide mass,Peptide Sequence
 Cervidae,Alces,Alces alces COL1A1 predicted protein,917,743.3562160628401,GETGPAGR
 Cervidae,Alces,Alces alces COL1A1 predicted protein,933,1415.70449321259,AGEVGPPGPPGPAGEK
 Bovidae,Bos,Bos taurus COL1A1 prot,446,4865.60209430341,GANVSILQVSEPPPVPAFHLPLPSSPGLNLFGLPQGAPGIAGAPGFPGAR
@@ -15,22 +15,6 @@ Hyaenidae,Crocuta,Crocuta crocuta COL1A1 predicted protein,1460,2928.46193369281
 Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,27,1988.14186015076,LLLLLAAAALLTHGQEEGR
 Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,42,1656.81412049093,EEDIPAVTCIQNGLR
 Rhinocerotidae,Dicerorhinus,Dicerorhinus sumatrensis COL1A1 predicted protein,1312,782.39628997156,TWYVSK
-Equidae,Equus,Equus asinus COL1A1 prot X1,46,4073.0626901104197,LLLLLAATALLTHGQEEGQEEGQEEDIPAVTCIQDGLR
-Equidae,Equus,Equus asinus COL1A1 prot X1,54,502.29036834916997,AVWK
-Equidae,Equus,Equus asinus COL1A1 prot X1,79,2169.90506347376,VCICDNGNVLCDDVICEDTK
-Equidae,Equus,Equus asinus COL1A1 prot X1,88,871.422187624,NCPGASVPK
-Equidae,Equus,Equus asinus COL1A1 prot X1,114,2690.11459804365,DECCPVCPEGQVSPTDDQTTGVEGPK
-Equidae,Equus,Equus asinus COL1A1 prot X1,861,2231.13348029413,GDAGPPGPAGPAGPPGPIGSVGAPGPK
-Equidae,Equus,Equus asinus COL1A1 prot X1,1083,1529.79503955261,GEAGPAGPAGPIGPVGAR
-Equidae,Equus,Equus asinus COL1A1 prot X1,1213,627.27248643694,SHDGGR
-Equidae,Equus,Equus caballus COL1A1 prot,46,4073.0626901104197,LLLLLAATALLTHGQEEGQEEGQEEDIPAVTCIQDGLR
-Equidae,Equus,Equus caballus COL1A1 prot,54,502.29036834916997,AVWK
-Equidae,Equus,Equus caballus COL1A1 prot,79,2169.90506347376,VCICDNGNVLCDDVICEDTK
-Equidae,Equus,Equus caballus COL1A1 prot,88,871.422187624,NCPGASVPK
-Equidae,Equus,Equus caballus COL1A1 prot,114,2690.11459804365,DECCPVCPEGQVSPTDDQTTGVEGPK
-Equidae,Equus,Equus caballus COL1A1 prot,861,2231.13348029413,GDAGPPGPAGPAGPPGPIGSVGAPGPK
-Equidae,Equus,Equus caballus COL1A1 prot,1083,1529.79503955261,GEAGPAGPAGPIGPVGAR
-Equidae,Equus,Equus caballus COL1A1 prot,1213,627.27248643694,SHDGGR
 Hominidae,Homo,Homo sapiens COL1A1 prot X1,46,4054.10449535283,LLLLLAATALLTHGQEEGQVEGQDEDIPPITCVQNGLR
 Hominidae,Homo,Homo sapiens COL1A1 prot X1,67,850.36770969728,ICVCDNGK
 Hominidae,Homo,Homo sapiens COL1A1 prot X1,79,1351.5999540343198,VLCDDVICDETK
@@ -112,9 +96,7 @@ Suidae,Sus,Sus scrofa COL1A1 prot X1,1064,2106.0494163156,GESGPAGPPGAPGAPGAPGPVG
 Suidae,Sus,Sus scrofa COL1A1 prot X1,1312,2457.10145460905,VFCNMETGETCVYPTQPSVPQK
 Suidae,Sus,Sus scrofa COL1A1 prot X1,1426,2091.93602653041,FTYSVIYDGCTSHTGAWGK
 Suidae,Sus,Sus scrofa COL1A1 prot X1,1466,2952.51944857023,LPIIDVAPLDVGAPDQEFGIDLSPVCFL
-Ursidae,Ursus,Ursus arctos horribilis COL1A1 prot X1,43,3755.9403901477694,LLLLVAATALLTHGQEEGQEEEDIPPVTCVQNGLR
 Ursidae,Ursus,Ursus arctos horribilis COL1A1 prot X1,1461,2940.4653049961403,LPIIDVAPLDIGAPDQEFGMDVGPVCFL
-Ursidae,Ursus,Ursus thibetanus thibetanus COL1A1 predicted protein,43,3755.9403901477694,LLLLVAATALLTHGQEEGQEEEDIPPVTCVQNGLR
 Canidae,Vulpes,Vulpes lagopus COL1A1 predicted protein,1089,851.46134983889,GPAGPQGLR
 
-"Genera that don't have a unique peptide :Bison,Canis,Capreolus,Ceratotherium,Cervus,Diceros,Felis,Panthera"
+"Sequences that don't have a unique peptide : Bison bison bison COL1A1 prot,Canis lupus dingo COL1A1 prot,Capreolus capreolus COL1A1 predicted protein,Ceratotherium simum simum COL1A1 prot,Cervus elaphus COL1A1 predicted protein,Diceros bicornis COL1A1 predicted protein,Equus asinus COL1A1 prot X1,Equus caballus COL1A1 prot,Felis catus COL1A1 prot X1,Panthera pardus COL1A1 prot X1,Ursus thibetanus thibetanus COL1A1 predicted protein,Vulpes vulpes COL1A1 prot"

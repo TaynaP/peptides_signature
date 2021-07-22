@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
-from combinaisons import *
+from combinations import *
 from unique_peptides import *
 import argparse
 

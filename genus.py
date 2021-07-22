@@ -1,5 +1,5 @@
 import itertools
-import combinaisons
+import combinations
 import os
 import csv
 
@@ -189,5 +189,5 @@ def mainGenre(dict_p, output_dir, peptidesToProtein):
     pretty_print_unique_peptide_genus(uniquePepGenre, AllGenus, output_dir)
 
     # Liste des séquences n'ayant pas de peptides uniques pour un genre
-    seqWithoutUniqueGenre = combinaisons.getSequencesWithoutUnique(peptidesToProtein, uniquePepGenre)
+    seqWithoutUniqueGenre = combinations.getSequencesWithoutUnique(peptidesToProtein, uniquePepGenre)
     return seqWithoutUniqueGenre
