@@ -8,12 +8,12 @@ Ce programme a pour but de trouver les peptides uniques à une espèce (dans le 
 
 Ce dossier contient 2 dossiers : results (fichiers générés par le code, nos résultats) et fichier (fichiers utilisés, notamment le fichier csv contenant les peptides), suivi de notre code.
 
-- peptide_v2 est notre classe représentant un peptide
+- peptide est notre classe représentant un peptide
 - unique_peptides contient les fonctions utilisées pour chercher les peptides uniques dans les séquences.
-- genre et famille contiennent les fonctions utilisées pour chercher les peptides uniques pour des familles ou genres
-- combinaisons contient les fonctions pour chercher les combinaisons uniques de peptides
+- genus et family contiennent les fonctions utilisées pour chercher les peptides uniques pour des familles ou genres
+- combinations contient les fonctions pour chercher les combinaisons uniques de peptides
 - Utils est un fichier où sont stockées les fonctions dont nous ne nous servons plus pour le moment
-- Main contient uniquement la fonction main
+- main contient uniquement la fonction main
 
 ## Contraintes techniques
 
@@ -25,17 +25,17 @@ Ce dossier contient 2 dossiers : results (fichiers générés par le code, nos r
 2 manières :
 
 `
-$ chmod u+x Main.py
+$ chmod u+x main.py
 `
 
 `
-$ ./Main.py [-h] [-p PEPTIDETHRESHOLD] [-c COMBINATIONTHRESHOLD] -i peptidesCSVFile -o resultsPath
+$ ./main.py [-h] [-p PEPTIDETHRESHOLD] [-c COMBINATIONTHRESHOLD] -i peptidesCSVFile -o resultsPath
 `
 
 Ou :
 
 `
-$ python3 Main.py [-h] [-p PEPTIDETHRESHOLD] [-c COMBINATIONTHRESHOLD] -i peptidesCSVFile -o resultsPath
+$ python3 main.py [-h] [-p PEPTIDETHRESHOLD] [-c COMBINATIONTHRESHOLD] -i peptidesCSVFile -o resultsPath
 `
 ### Paramètres
 
@@ -52,13 +52,13 @@ Facultatifs :
 Exemple de commande fonctionnelle :
 
 `
-$ python3 Main.py -i fichier/COL1A1_trypsin.csv -o results/
+$ python3 main.py -i files/COL1A1_trypsin.csv -o results/
 `
 
 Exemple de commande fonctionnelle avec options :
 
 `
-$ python3 Main.py -i fichier/COL1A1_trypsin.csv -o results/ -p 5 -c 1
+$ python3 main.py -i files/COL1A1_trypsin.csv -o results/ -p 5 -c 1
 `
 
 ### Syntaxe du fichier d'entrée
@@ -82,11 +82,11 @@ Exemple :
 
 ## Fichiers résultats
 
-- uniquePeptides.csv : contient les peptides caractéristiques d'une séquence (qui n'apparaissent que dans une séquence)
+- unique_peptides.csv : contient les peptides caractéristiques d'une séquence (qui n'apparaissent que dans une séquence)
 - unique_pep_genre.csv : contient les peptides caractéristiques d'un genre (qui n'apparaissent que dans un seul genre)
 - unique_pep_family.csv : contient les peptides caractéristiques d'une famille (qui n'apparaissent que dans une seule famille)
 - combinations.csv : contient les combinaisons unique de peptides par protéine, genre et famille (des peptides qui n'apparaissent simultanément que dans une séquence, un genre ou une famille)
-- liste_peptides.txt : contient la liste de tous les peptides associés aux peptides qui leurs sont identiques.  
+- peptide_list.txt : contient la liste de tous les peptides associés aux peptides qui leurs sont identiques.  
 
 A noter que nous fournissons un fichier exemple "COL1A1_trypsin.csv" pour faire un test.
 
