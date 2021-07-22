@@ -1,4 +1,4 @@
-Family,Genus,Name of prot,Position,Peptide mass,Peptide seq
+Family,Genus,Protein Name,Position,Peptide mass,Peptide Sequence
 Cervidae,Alces,Alces alces COL1A1 predicted protein,917,743.3562160628401,GETGPAGR
 Cervidae,Alces,Alces alces COL1A1 predicted protein,933,1415.70449321259,AGEVGPPGPPGPAGEK
 Bovidae,Bos,Bos taurus COL1A1 prot,446,4865.60209430341,GANVSILQVSEPPPVPAFHLPLPSSPGLNLFGLPQGAPGIAGAPGFPGAR
@@ -99,4 +99,4 @@ Suidae,Sus,Sus scrofa COL1A1 prot X1,1466,2952.51944857023,LPIIDVAPLDVGAPDQEFGID
 Ursidae,Ursus,Ursus arctos horribilis COL1A1 prot X1,1461,2940.4653049961403,LPIIDVAPLDIGAPDQEFGMDVGPVCFL
 Canidae,Vulpes,Vulpes lagopus COL1A1 predicted protein,1089,851.46134983889,GPAGPQGLR
 
-"Les séquences suivantes n'ont pas de peptide unique : Bison bison bison COL1A1 prot,Canis lupus dingo COL1A1 prot,Capreolus capreolus COL1A1 predicted protein,Ceratotherium simum simum COL1A1 prot,Cervus elaphus COL1A1 predicted protein,Diceros bicornis COL1A1 predicted protein,Equus asinus COL1A1 prot X1,Equus caballus COL1A1 prot,Felis catus COL1A1 prot X1,Panthera pardus COL1A1 prot X1,Ursus thibetanus thibetanus COL1A1 predicted protein,Vulpes vulpes COL1A1 prot"
+"Sequences that don't have a unique peptide : Bison bison bison COL1A1 prot,Canis lupus dingo COL1A1 prot,Capreolus capreolus COL1A1 predicted protein,Ceratotherium simum simum COL1A1 prot,Cervus elaphus COL1A1 predicted protein,Diceros bicornis COL1A1 predicted protein,Equus asinus COL1A1 prot X1,Equus caballus COL1A1 prot,Felis catus COL1A1 prot X1,Panthera pardus COL1A1 prot X1,Ursus thibetanus thibetanus COL1A1 predicted protein,Vulpes vulpes COL1A1 prot"
