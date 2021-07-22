@@ -67,7 +67,7 @@ C'est un fichier CSV qui doit correspondre à une digestion in silico. Il peut �
 
 Syntaxe :
 
-Nom_prot,No_peptide,Enzyme,Pos_clivage,Taille_pep,Masse_pep,pI,Sequence
+Nom_protéine,Numéro_peptide,Enzyme,Position_de_clivage,Taille_peptide,Masse_peptide,pI,Sequence
 
 #### Pour obtenir ce fichier csv en utilisant RPG :
 
@@ -75,7 +75,7 @@ Il faut en entrée RPG un fichier fasta avec une en-tête pour chaque séquence 
 
 >Famille_Genre_Nom_de_protéine
 
-exemple :
+Exemple :
 >Bovidae_Bos_Bos_taurus_COL1A1_prot
 
 ## Fichiers résultats
