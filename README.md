@@ -6,7 +6,7 @@ Ce programme a pour but de trouver les peptides uniques à une espèce (dans le 
 
 ## Description
 
-Ce dossier contient 2 dossiers : results (fichiers générés par le code, nos résultats) et fichier (fichiers utilisés, notamment le fichier csv contenant les peptides), suivi de notre code.
+Ce dossier contient deux dossiers : results (fichiers générés par le code, nos résultats) et fichier (fichiers utilisés, notamment le fichier csv contenant les peptides), suivi de notre code.
 
 - peptide est notre classe représentant un peptide
 - unique_peptides contient les fonctions utilisées pour chercher les peptides uniques dans les séquences.
@@ -18,11 +18,11 @@ Ce dossier contient 2 dossiers : results (fichiers générés par le code, nos r
 ## Contraintes techniques
 
 - Python 3
-- RPG 1.2.4
+- RPG 1.2.4  (https://rapid-peptide-generator.readthedocs.io/en/latest/)
 
 ## Lancement du code
 
-2 manières :
+Deux manières :
 
 `
 $ chmod u+x main.py
@@ -46,7 +46,7 @@ Obligatoires :
 Facultatifs :
 - -h : message d'aide
 - -p : la taille minimale des peptides gardés (par défaut 1)
-- -c : la taille maximale d'une combinaison (par défaut aucune limite)
+- -c : le nombre maximal de peptides dans une combinaison (par défaut aucune limite)
 
 
 Exemple de commande fonctionnelle :
@@ -83,9 +83,9 @@ Exemple :
 ## Fichiers résultats
 
 - unique_peptides.csv : contient les peptides caractéristiques d'une séquence (qui n'apparaissent que dans une séquence)
-- unique_pep_genre.csv : contient les peptides caractéristiques d'un genre (qui n'apparaissent que dans un seul genre)
-- unique_pep_family.csv : contient les peptides caractéristiques d'une famille (qui n'apparaissent que dans une seule famille)
-- combinations.csv : contient les combinaisons unique de peptides par protéine, genre et famille (des peptides qui n'apparaissent simultanément que dans une séquence, un genre ou une famille)
+- unique_pep_genre.csv : contient les peptides caractéristiques d'une séquence vis-à-vis des séquences d'autres genres 
+- unique_pep_family.csv : contient les peptides caractéristiques d'une séquence vis-à-vis des séquences d'autres familles 
+- combinations.csv : contient les combinaisons uniques de peptides par protéine, genre et famille (des peptides qui n'apparaissent simultanément que dans une séquence, un genre ou une famille)
 - peptide_list.txt : contient la liste de tous les peptides associés aux peptides qui leurs sont identiques.  
 
 A noter que nous fournissons un fichier exemple "COL1A1_trypsin.csv" pour faire un test.
